@@ -37,7 +37,8 @@
   "webpack-merge": "^5.8.0"
  },
  "dependencies": {
-  "gh-pages": "^3.2.3"
+  "gh-pages": "^3.2.3",
+  "typewriter-effect": "^2.18.0"
  },
  "private": true
 }
