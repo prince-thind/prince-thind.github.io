@@ -54,13 +54,7 @@ display: flex;
    font-size:3em;
    margin:0 0 10px 0;
 }
-.intro-text
-{
-   color:rgba(255, 126, 126, 0.5);
-   font-size:1.5em;
-   margin:0;
-   font-style: italic;
-}
+
 .ruler
 {
    margin-top:50px;
@@ -219,3 +213,8 @@ display: flex;
    box-shadow:0 0 3px 2px rgb(92, 87, 87);
 }
 }
+
+
+/* .Typewriter__cursor{
+   display: none;
+} */
