@@ -6,12 +6,13 @@
   --dull-white: hsla(0, 0%, 100%, 0.8);
   --dull-black: hsl(0, 0%, 7%);
   --neutral-red: hsl(0, 65%, 35%);
+  --neutral-green: hsl(120, 15%, 50%);
   --neutral-blue: hsl(240, 40%, 75%);
-  --neutral-green: hsl(120, 50%, 75%);
   --dark-blue: hsl(241, 41%, 28%);
   --black-blue: hsl(240, 100%, 2%);
 }
 body {
+  position: relative;
   text-align: center;
   color: var(--dull-white);
   background-color: var(--dull-black);
@@ -85,7 +86,6 @@ a {
 }
 .about-heading {
   padding: 1rem;
-  padding-bottom: 3rem;
 }
 .about-description {
   max-width: 50ch;
@@ -93,6 +93,10 @@ a {
   text-align: center;
   margin: auto;
   color: var(--neutral-blue);
+}
+.about-github-link {
+  display: inline;
+  color: #0056b3;
 }
 .profile-logo {
   display: block;
@@ -104,11 +108,9 @@ a {
 
 .education {
   padding: 1rem 0;
-  /* background-color: var(--black-blue) */
 }
 .education-heading {
   padding-top: 1rem;
-  /* padding-bottom: 0; */
 }
 .education-ruler {
   background: linear-gradient(to left, transparent, blue, transparent);
@@ -119,25 +121,23 @@ a {
   width: 50%;
   margin: auto;
   list-style-type: none;
-  /* border: 2px solid gray; */
 }
 .education-list-item {
   box-sizing: border-box;
   padding: 1rem 2rem;
   padding-bottom: 2rem;
-  /* border-bottom: 2px solid gray; */
   border: 2px solid gray;
 
   background-color: black;
   margin: 1rem 0;
 }
 .education-institute {
+  text-align: left;
   display: flex;
   justify-content: space-between;
 }
 .education-title {
   font-size: 1.5rem;
-  /* color:var(--neutral-blue); */
 }
 .education-institute-name {
   color: var(--neutral-blue);
@@ -146,9 +146,10 @@ a {
   font-size: 1.5rem;
 }
 .education-institute-grades {
-  font-size: 1.3rem;
-  padding: 2rem 1rem 1rem 1rem;
+  font-size: 1.2rem;
+  padding: 2rem 1rem 0.5rem 1rem;
   text-align: left;
+  color: var(--neutral-green);
 }
 .education-institute-details {
   padding-left: 1rem;
@@ -165,12 +166,10 @@ a {
 .projects-heading {
   font-size: 1.5rem;
   padding-top: 1rem;
-  /* padding-bottom: 0; */
 }
 .projects-ruler {
   background: linear-gradient(to left, transparent, red, transparent);
   margin-top: 0.5rem;
-  /* margin-bottom: 2rem; */
 }
 .projects-grid {
   display: grid;
@@ -227,12 +226,12 @@ a {
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
-.footer-navbar,.footer-contacts{
+.footer-navbar,
+.footer-contacts {
   display: flex;
   flex-direction: column;
-    justify-content: center;
-  /* align-items: center; */
-  flex:1;
+  justify-content: center;
+  flex: 1;
 }
 .footer-text {
   margin-top: 0;
@@ -244,20 +243,17 @@ a {
   list-style-type: none;
 }
 .footer-link {
-  /* background-color: rgb(62, 100, 47); */
   font-size: 5rem;
-  /* padding: 1rem; */
-  /* box-shadow: 0 0 3px 2px rgb(0, 0, 0); */
   margin: 0 1rem;
 }
 
 .footer-link:hover {
-  background-color: rgb(41, 66, 31);
+  transform: scale(1.05);
 }
 
 .footer-copyright {
   font-size: 1.2rem;
   background-color: black;
-  border:1px solid gray;
-  padding:0.5rem;
+  border: 1px solid gray;
+  padding: 0.5rem;
 }

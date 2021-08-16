@@ -7,16 +7,26 @@
 }
 
 .back-to-top{
-  position: fixed;
-  top:-5rem;
-  right:1rem;
-  background-color:cadetblue;
-  color:white;
-  border-radius: 50%;
+  position: sticky;
+  font-size:2rem;
   padding:1rem;
-  font-size:1.5rem;
-  transition: transform 500ms;
+  top:calc(100vh - 7rem);
+  background-color: cadetblue;
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.back-to-top-visible{
-  transform: translateY(7rem)
+
+.back-to-top-wrapper{
+  /* outline:3px solid red; */
+  position: absolute;
+  right:1rem;
+  bottom: 0;
+  top:100vh;
 }
+
+
+
