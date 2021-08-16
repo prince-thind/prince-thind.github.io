@@ -5,3 +5,18 @@
   opacity: 1;
   transition: opacity 2s;
 }
+
+.back-to-top{
+  position: fixed;
+  top:-5rem;
+  right:1rem;
+  background-color:cadetblue;
+  color:white;
+  border-radius: 50%;
+  padding:1rem;
+  font-size:1.5rem;
+  transition: transform 500ms;
+}
+.back-to-top-visible{
+  transform: translateY(7rem)
+}
