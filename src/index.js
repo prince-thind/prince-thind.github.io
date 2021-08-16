@@ -1,10 +1,12 @@
-import './style.css';
-import './styles/intro.css';
+import './styles/index.css';
+import './styles/effects.css';
 
-import typewrite from './components/typewriter'
-import fadeText from './components/fadeText'
+import typewrite from './components/typewriter';
+import fadeText from './components/fadeText';
 
-const intro=document.querySelector('#intro-heading');
-const title=document.querySelector('#intro-text');
+const intro = document.querySelector('#intro-heading');
+const subHeading = document.querySelector('#sub-heading');
 
-typewrite(intro,()=>{fadeText(title)});
+typewrite(intro).then(() => {
+  fadeText(subHeading);
+});
