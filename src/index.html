@@ -5,98 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prince Thind's PortFolio</title>
+    <title>Portfolio</title>
     <link rel="shortcut icon" type="image/jpg" href="./assets/profile-logo.png" />
 </head>
 
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="menu">
-            <a class="menu-item" href="#welcome-section">About</a>
-            <a class="menu-item" href="#projects">Work</a>
-            <a class="menu-item" href="#footer">Contact</a>
-        </div>
-    </nav>
+    <header>
+        <nav class="header-navbar" id="header-navbar" aria-label="site-navigation">
+            <ul class="header-menu">
+                <li><a class="menu-item" href="#about-section">About</a></li>
+                <li><a class="menu-item" href="#education-section">Education</a></li>
+                <li><a class="menu-item" href="#projects-section">Work</a></li>
+                <li><a class="menu-item" href="#footer-section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <section class="welcome-section" id="welcome-section">
-        <h1 class="intro-heading" id='intro-heading'>Hey! I am Prince Thind</h1>
-        <p class="intro-text" id='intro-text'>a junior web developer</p>
-        <hr class="ruler">
+        <h1 class="welcome-heading" id='welcome-heading'>Hi, I am Prince Thind</h1>
+        <div class="welcome-sub-heading transparent" id="welcome-sub-heading">
+            <h2 class="welcome-intro-text" id='welcome-intro-text'>a junior web developer</h2>
+            <hr class="ruler welcome-ruler">
+        </div>
     </section>
-    <section class="projects" id="projects">
-        <h1 class="project-heading">These are some of my projects</h1>
-        <hr class="project-ruler">
-        <div class="project-grid">
-            <div class="project-tile">
+    <section class="about-section" id='about-section'>
+        <h2 class="about-heading">About Me</h2>
+        <div class="profile-picture">
+            <img src="assets/profile-logo.png" alt="profile" class="profile-logo">
+        </div>
+        <p class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate minus aut
+            accusamus nobis odio hic totam earum autem neque. Exercitationem porro illum, ipsam explicabo beatae non
+            perspiciatis itaque nemo quos!</p>
+    </section>
+    <section class="education-section" id="education-section">
+        <h2 class="education-heading">Education</h2>
+        <ul class="education-list">
+            <li class="education-list-item">
+                <div class="education-institute">
+                    <div class="education-institute-name">LPU</div>
+                    <div class="education-institute-duration">2019-2023</div>
+                </div>
+                <div class="education-institute-grades">cgpa:9</div>
+                <ul class="education-institute-details">
+                    <li class="education-institure-points">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Rerum, veritatis.</li>
+                </ul>
+            </li>
+            <li class="education-list-item"> <div class="education-institute">
+                <div class="education-institute-name">GMT</div>
+                <div class="education-institute-duration">2019-2023</div>
+            </div>
+            <div class="education-institute-grades">cgpa:9</div>
+            <ul class="education-institute-details">
+                <li class="education-institure-points">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum, veritatis.</li>
+            </ul></li>
+            <li class="education-list-item"> <div class="education-institute">
+                <div class="education-institute-name">Bruh</div>
+                <div class="education-institute-duration">2019-2023</div>
+            </div>
+            <div class="education-institute-grades">cgpa:9</div>
+            <ul class="education-institute-details">
+                <li class="education-institure-points">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum, veritatis.</li>
+            </ul></li>
+        </ul>
+    </section>
+    <section class="projects-section" id="projects-section">
+        <h2 class="projects-heading">These are some of my projects</h2>
+        <hr class="projects-ruler ruler">
+        <div class="projects-grid">
+            <!-- <div class="project-tile">
                 <div class="project-tile__heading">A Product Landing Page</div>
                 <img class="project-tile__pictue" src="assets/productLanding.png"></img>
                 <a class="project-tile__link" target="_blank"
                     href="https://prince-thind.github.io/A-Product-Landing-Page/">Link</a>
-            </div>
-            <div class="project-tile">
-                <div class="project-tile__heading">A Beating Heart</div>
-                <img class="project-tile__pictue" src="assets/beatingHeart.gif"></img>
-                <a class="project-tile__link" target="_blank"
-                    href="https://prince-thind.github.io/Web-dev-fun-projects/Beating-Heart/">Link</a>
-            </div>
-            <div class="project-tile">
-                <div class="project-tile__heading">A Survey Form</div>
-                <img class="project-tile__pictue" src="assets/surveyForm.png"></img>
-                <a class="project-tile__link" target="_blank"
-                    href="https://prince-thind.github.io/Survey-Form/">Link</a>
-            </div>
-            <div class="project-tile">
-                <div class="project-tile__heading">Flag of USSR with CSS</div>
-                <img class="project-tile__pictue" src="assets/USSR.png"></img>
-                <a class="project-tile__link" target="_blank"
-                    href="https://prince-thind.github.io/Web-dev-fun-projects/Flag_of_USSR/">Link</a>
-            </div>
-            <div class="project-tile">
-                <div class="project-tile__heading">A Tribute Page</div>
-                <img class="project-tile__pictue" src="assets/tributePage.png"></img>
-                <a class="project-tile__link" target="_blank"
-                    href="https://prince-thind.github.io/A-Tribute-Page/">Link</a>
-            </div>
-            <div class="project-tile">
-                <div class="project-tile__heading">Google Home Page</div>
-
-                <img class="project-tile__pictue" src="assets/googleHomepage.png"></img>
-                <a class="project-tile__link" target="_blank"
-                    href="https://prince-thind.github.io/google-homepage/">Link</a>
-            </div>
-
-            <div class="project-tile">
-                <div class="project-tile__heading">Rock Paper Scissor in JS</div>
-                <img class="project-tile__pictue" src="assets/rockPaperScissor.png"></img>
-                <a class="project-tile__link" target="_blank"
-                    href="https://prince-thind.github.io/Rock-paper-scissor-in-JS/">Link</a>
-            </div>
-
-
-
-            <div class="project-tile">
-                <div class="project-tile__heading">A Techincal Guide</div>
-                <img class="project-tile__pictue" src="assets/technicalDoc.png"></img>
-                <a class="project-tile__link" target="_blank"
-                    href="https://prince-thind.github.io/A-Technical-Documentation-Page/">Link</a>
-            </div>
+            </div> -->
         </div>
-        <div class="other-projects">
-            <a class="other-links" href="https://github.com/Prince-Thind?tab=repositories">Show All</a>
+        <div class="projects-other">
+            <a class="other-links" target='_blank' href="https://github.com/Prince-Thind?tab=repositories">View All</a>
         </div>
     </section>
-    <footer class="footer" id="footer">
-        <h1 class="footer-head">Let's connect!</h1>
+    <footer class="footer-section" id="footer-section">
+        <h3 class="footer-heading">Let's connect!</h3>
         <p class="footer-text">Ping me on any of these and I'll get in touch with you very soon</p>
-        <div class="contacts">
-            <a class="profile-link" id="profile-link" target="_blank" href="https://github.com/Prince-Thind">Github</a>
-            <a class="profile-link" id="profile-link" target="_blank"
-                href="https://discord.com/users/658611922630868992">Discord</a>
-            <a class="profile-link" id="profile-link" target="_blank"
-                href="https://www.instagram.com/princethind499/">Instagram</a>
-        </div>
-        <hr class="footer-ruler">
-        <div class="about">
-            <p>That's all folks!</p>
+        <nav class="footer-contacts" aria-label="other-social-media">
+            <ul>
+                <li>
+                    <a class="profile-link" target="_blank"
+                        href="https://github.com/Prince-Thind">Github</a>
+                </li>
+                <li> <a class="profile-link"  target="_blank"
+                        href="https://discord.com/users/658611922630868992">Discord</a></li>
+                <li><a class="profile-link" target="_blank"
+                        href="https://www.instagram.com/princethind499/">Instagram</a></li>
+            </ul>
+        </nav>
+        <hr class="footer-ruler ruler">
+        <div class="footer-about">
+            That's all folks!
         </div>
     </footer>
 </body>
