@@ -1,6 +1,6 @@
 import './styles/index.css';
 import './styles/effects.css';
-import '../node_modules/@fortawesome/fontawesome-free/js/all'
+// import '../node_modules/@fortawesome/fontawesome-free/js/all'
 
 import typewrite from './components/typewriter';
 import fadeText from './components/fadeText';
