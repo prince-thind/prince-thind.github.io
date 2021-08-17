@@ -3,6 +3,7 @@ import Typewriter from 'typewriter-effect/dist/core';
 function typewrite(node) {
   const text = node.innerText;
   node.innerText = '';
+  node.classList.toggle('transparent');
   const typewriter = new Typewriter(node);
 
   return new Promise((resolve) => {
