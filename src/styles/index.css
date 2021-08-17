@@ -184,16 +184,24 @@ a {
   border-radius: 0.5rem;
   padding: 1rem;
   padding-top: 0;
+  display:  flex;
+  flex-direction: column;
 }
 .project-tile:hover {
   transform: scale(1.02);
 }
+.project-tile-link{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
 .projects img {
   display: block;
-  height: auto;
+  height: 100%;
   width: 100%;
   border-radius: 0.5rem;
   filter: brightness(75%);
+  border:2px solid black;
 }
 
 .project-tile-heading {

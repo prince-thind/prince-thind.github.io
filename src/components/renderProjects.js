@@ -8,6 +8,7 @@ function renderProjects(node) {
     const aTag = document.createElement('a');
     aTag.classList.add('project-tile-link');
     aTag.setAttribute('href', project.href);
+    aTag.setAttribute('target', '_blank');
     li.appendChild(aTag);
 
     const h4 = document.createElement('h4');
@@ -26,3 +27,13 @@ function renderProjects(node) {
 }
 
 export default renderProjects;
+
+
+
+//  <li class="project-tile">
+// <a class="project-tile-link" target="_blank"
+//     href="https://prince-thind.github.io/A-Product-Landing-Page/">
+//     <div class="project-tile-heading">A Product Landing Page</div>
+//     <img class="project-tile-pictue" src="assets/productLanding.png"></img>
+// </a>
+// </li> 
