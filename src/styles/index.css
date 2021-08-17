@@ -267,6 +267,27 @@ a {
   padding: 0.5rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .about{
+    padding:1rem;
+  }
+  .profile-logo{
+    height: 30vmin;
+    width: 30vmin;
+  }
+  .education-list{
+    width: 75%;
+  }
+  .projects-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
 @media only screen and (max-width: 760px) {
   .menu-item {
     font-size: 1rem;
@@ -282,7 +303,6 @@ a {
   }
   .about {
     flex-direction: column;
-    padding: 1rem;
   }
   .about-description {
     font-size: 1rem;
