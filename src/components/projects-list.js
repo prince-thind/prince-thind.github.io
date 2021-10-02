@@ -21,7 +21,7 @@ const projects = [
   },
   {
     name: 'Retro Calculator',
-    href: 'https://prince-thind.github.io/calculator-js/',
+    href: 'https://prince-thind.github.io/calculator/',
     src: require('../assets/calculator.png'),
   },
   {
