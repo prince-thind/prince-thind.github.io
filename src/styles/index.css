@@ -16,7 +16,7 @@ body {
   text-align: center;
   color: var(--dull-white);
   background-color: var(--dull-black);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'times-new-roman';
 }
 a {
   display: block;
