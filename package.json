@@ -1,45 +1,19 @@
 {
- "name": "portfolio",
- "version": "1.0.0",
- "description": "",
- "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "watch": "webpack --watch --config webpack.dev.js",
-  "start": "webpack serve --open --config webpack.dev.js",
-  "build": "webpack --config webpack.prod.js",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
- },
- "repository": {
-  "type": "git",
-  "url": "git+https://github.com/Prince-Thind/Portfolio.git"
- },
- "keywords": [],
- "author": "",
- "license": "ISC",
- "bugs": {
-  "url": "https://github.com/Prince-Thind/Portfolio/issues"
- },
- "homepage": "https://github.com/Prince-Thind/Portfolio#readme",
- "devDependencies": {
-  "css-loader": "^6.2.0",
-  "css-minimizer-webpack-plugin": "^3.0.2",
-  "eslint": "^7.32.0",
-  "eslint-config-airbnb-base": "^14.2.1",
-  "eslint-config-prettier": "^8.3.0",
-  "eslint-plugin-import": "^2.24.0",
-  "html-loader": "^2.1.2",
-  "html-webpack-plugin": "^5.3.2",
-  "mini-css-extract-plugin": "^2.2.0",
-  "webpack": "^5.50.0",
-  "webpack-cli": "^4.7.2",
-  "webpack-dev-server": "^3.11.2",
-  "webpack-merge": "^5.8.0"
- },
- "dependencies": {
-  "@fortawesome/fontawesome-free": "^5.15.4",
-  "gh-pages": "^3.2.3",
-  "typewriter-effect": "^2.18.0"
- },
- "private": true
+  "name": "nextapp",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.0.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.3"
+  }
 }
