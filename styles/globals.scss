@@ -10,3 +10,12 @@ body {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
