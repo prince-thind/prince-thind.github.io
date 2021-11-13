@@ -1,0 +1,27 @@
+@use "./variables";
+.intro {
+  h1 {
+    font-size: 3rem;
+    --screen: 25vh;
+    margin-top: var(--screen);
+    color: variables.$white_lt;
+  }
+  h2 {
+    color: variables.$red_lt;
+    font-style: italic;
+    // margin: 0rem;
+  }
+  hr {
+    margin: auto;
+    width: 75%;
+    border: none;
+    padding: 1px;
+    margin-top: 1rem;
+    background: linear-gradient(
+      to left,
+      variables.$black,
+      variables.$red_pure,
+      variables.$black
+    );
+  }
+}
