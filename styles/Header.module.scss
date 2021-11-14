@@ -1,23 +1,37 @@
 @use "variables";
+@use "mixins";
 
 .navbar {
   background-color: variables.$red;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+
   ul {
     display: flex;
     list-style-type: none;
   }
 }
+
+.brand {
+  display: flex;
+  align-items: center;
+  @include mixins.normalize-link($hover: inherit);
+  img {
+    background-color: black;
+    border-radius: 50%;
+  }
+  h2 {
+    font-size: 1.2rem;
+    // font-family:'Times New Roman', Times, serif;
+    padding: 0 0.5rem;
+    letter-spacing: 1px;
+  }
+}
 .nav-item {
   display: block;
-  padding: 0.5em;
-  font-size: 1.5rem;
-  color: white;
-  text-decoration: none;
-  &:visited {
-    color: white;
-  }
-  &:hover {
-    background-color: hsl(0, 100%, 15%);
-  }
+  padding: 0.7em;
+  @include mixins.normalize-link();
 }
