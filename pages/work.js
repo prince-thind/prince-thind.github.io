@@ -1,12 +1,12 @@
 import Head from "next/head";
 
-export default function Projects() {
+export default function Work() {
   return (
     <div>
       <Head>
-        <title>Projects</title>
+        <title>Work</title>
       </Head>
-      Projects
+      Work
     </div>
   );
 }

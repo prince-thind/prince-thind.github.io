@@ -26,8 +26,8 @@ export default function Home() {
           <p>Hello, I am Prince Thind, a Full Stack web developer and Programmer working to create the best websites with modern technologies like React and ExpressJS. Visit my Dedicated <Link href="/about"><a>about</a></Link> Page to know more about me.</p>
           <ul>
             <li>
-              <Link href="/projects">
-                <a>Projects</a>
+              <Link href="/work">
+                <a>work</a>
               </Link>
             </li>
             <li>

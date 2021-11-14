@@ -30,8 +30,8 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/projects">
-              <a className={styles["nav-item"]}>Projects</a>
+            <Link href="/work">
+              <a className={styles["nav-item"]}>Work</a>
             </Link>
           </li>
           <li>
