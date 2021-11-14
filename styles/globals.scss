@@ -21,3 +21,11 @@ main {
   display: flex;
   flex-direction: column;  
 }
+
+.main-footer{
+  border: 1px solid white;
+  background-color: black;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  transform: translateY(100%);
+}

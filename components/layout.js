@@ -1,5 +1,5 @@
-import Header from './header';
-import Footer from './footer';
+import Header from "./header";
+// import style from "../styles/globals.module.scss";
 
 function Layout(props) {
   return (
@@ -9,6 +9,14 @@ function Layout(props) {
       <Footer />
     </>
   );
+
+  function Footer() {
+    return (
+      <footer className="main-footer">
+        Copyright &copy; Prince Thind
+      </footer>
+    );
+  }
 }
 
 export default Layout;
