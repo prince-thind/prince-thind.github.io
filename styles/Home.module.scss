@@ -1,15 +1,16 @@
 @use "./variables";
+@use "./mixins";
+
 .intro {
+  --screen: 10vh;
+  margin: var(--screen) 0;
   h1 {
     font-size: 3rem;
-    --screen: 25vh;
-    margin-top: var(--screen);
     color: variables.$white_lt;
   }
   h2 {
     color: variables.$red_lt;
     font-style: italic;
-    // margin: 0rem;
   }
   hr {
     margin: auto;
@@ -23,5 +24,57 @@
       variables.$red_pure,
       variables.$black
     );
+  }
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  background-color: variables.$black_dk;
+  flex: 1;
+  padding: 0 5rem;
+
+  img {
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid white !important;
+  }
+}
+.details {
+  padding: 1rem;
+  background: variables.$darkGradient;
+  border: 1px solid variables.$gray;
+  align-self: stretch;
+  max-width: 70%;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  box-sizing: border-box;
+  padding-top: 2rem;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding-top: 2rem;
+    gap: 10%;
+    justify-content: center;
+    font-size: 1.5rem;
+    a {
+      padding: 0.5rem 1rem;
+      background-color: variables.$blue_dk;
+      border:1px solid variables.$gray;
+      display: inline-block;
+      &:hover {
+        background-color: variables.$blue_dk;
+        transform: scale(1.05);
+      }
+    }
+  }
+  a {
+    @include mixins.normalize-link($hover: unset, $color: variables.$blue_lt);
   }
 }
