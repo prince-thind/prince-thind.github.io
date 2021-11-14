@@ -3,7 +3,8 @@
 
 .intro {
   --screen: 10vh;
-  margin: var(--screen) 0;
+  margin-top: var(--screen);
+
   h1 {
     font-size: 3rem;
     color: variables.$white_lt;
@@ -25,6 +26,21 @@
       variables.$black
     );
   }
+  .resume {
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    border: 3px solid hsl(240, 40%, 5%);
+    background-color: variables.$blue_dk;
+    width: max-content;
+    margin: 1rem auto;
+    @include mixins.normalize-link($color: variables.$blue_lt);
+    box-shadow: 1px 1px 0 1px hsl(240, 50%, 5%);
+    &:hover{
+      background-color: hsl(240, 40%, 10%);
+
+    }
+  }
 }
 
 .main-section {
@@ -41,9 +57,9 @@
     background-color: black;
     border: 3px solid white !important;
   }
-  @media screen and (max-width:1000px) {
+  @media screen and (max-width: 1000px) {
     flex-direction: column;
-    gap:0;
+    gap: 0;
     padding-top: 2rem;
   }
 }
@@ -67,15 +83,15 @@
     gap: 5%;
     justify-content: center;
     font-size: 1.5rem;
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width: 1000px) {
       flex-direction: column;
-      gap:1rem;
-      
+      gap: 1rem;
     }
     a {
       padding: 0.5rem 1rem;
       background-color: variables.$blue_dk;
       // border:1px solid variables.$gray;
+      border-radius: 100px;
       display: inline-block;
       box-shadow: 1px 1px 0 1px hsl(240, 50%, 5%);
       @include mixins.normalize-link($hover: unset, $color: variables.$blue_lt);

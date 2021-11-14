@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import profilePic from "../images/brand-logo.png";
 import Head from "next/head";
+import Resume from '../components/resume'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <h1>Hi, I am Prince Thind</h1>
         <h2>A Full Stack Web Developer</h2>
         <hr />
+        <Resume />
       </section>
       <section className={styles["main-section"]}>
         <Image
