@@ -2,10 +2,14 @@ import styles from "../styles/Home.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import profilePic from "../images/brand-logo.png";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+    <Head>
+        <title>Home</title>
+      </Head>
       <section className={styles.intro}>
         <h1>Hi, I am Prince Thind</h1>
         <h2>A Full Stack Web Developer</h2>

@@ -1,6 +1,11 @@
+import Head from "next/head";
+
+
 export default function Education() {
     return (
-      <div>
+      <div><Head>
+      <title>Education</title>
+    </Head>
         Education
       </div>
     );

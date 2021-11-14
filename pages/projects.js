@@ -1,8 +1,12 @@
+import Head from "next/head";
+
 export default function Projects() {
-    return (
-      <div>
-        Projects
-      </div>
-    );
-  }
-  
+  return (
+    <div>
+      <Head>
+        <title>Projects</title>
+      </Head>
+      Projects
+    </div>
+  );
+}
