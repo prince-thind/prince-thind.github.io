@@ -22,13 +22,8 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/achievements">
-              <a className={styles["nav-item"]}>Achievements</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">
-              <a className={styles["nav-item"]}>Contact Me</a>
+            <Link href="/about">
+              <a className={styles["nav-item"]}>About</a>
             </Link>
           </li>
         </ul>
