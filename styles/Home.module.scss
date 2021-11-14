@@ -34,11 +34,13 @@
     background-color: variables.$blue_dk;
     width: max-content;
     margin: 1rem auto;
-    @include mixins.normalize-link($color: variables.$blue_lt, $hover:hsl(0, 100%, 15%));
+    @include mixins.normalize-link(
+      $color: variables.$blue_lt,
+      $hover: hsl(0, 100%, 15%)
+    );
     box-shadow: 1px 1px 0 1px hsl(240, 50%, 5%);
-    &:hover{
+    &:hover {
       background-color: hsl(240, 40%, 10%);
-
     }
   }
 }
@@ -47,7 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10vw;
+  gap: 5vw;
   background-color: variables.$black_dk;
   flex: 1;
   padding: 0 5rem;
@@ -69,12 +71,17 @@
   border: 1px solid variables.$gray;
   align-self: stretch;
   max-width: 70%;
-  margin: 2rem auto;
+  margin: 2rem 0;
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   padding-top: 2rem;
+
+  @media screen and (max-width: 1000px) {
+
+    margin: 2rem auto;
+  }
 
   ul {
     display: flex;
@@ -99,8 +106,7 @@
       &:hover {
         background-color: variables.$blue_dk;
         transform: scale(1.05);
-      background-color: hsl(240, 40%, 10%);
-
+        background-color: hsl(240, 40%, 10%);
       }
     }
   }
