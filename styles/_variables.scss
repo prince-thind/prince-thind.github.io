@@ -7,4 +7,5 @@ $blue_dk:hsl(240, 50%, 15%);
 $gray:hsl(0,0%,30%);
 $red_lt:hsl(0, 75%, 50%);
 $red_pure:hsl(0, 100%, 50%);
-$darkGradient:radial-gradient($gray,black);
+$darkGradient:linear-gradient(to top,hsl(0,0%,9%),black);
+// $darkGradient:radial-gradient(hsl(0,0%,9%),black);

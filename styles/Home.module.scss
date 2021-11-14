@@ -52,7 +52,6 @@
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
-  // align-items: center;
   box-sizing: border-box;
   padding-top: 2rem;
 
@@ -60,21 +59,21 @@
     display: flex;
     list-style-type: none;
     padding-top: 2rem;
-    gap: 10%;
+    gap: 5%;
     justify-content: center;
     font-size: 1.5rem;
     a {
       padding: 0.5rem 1rem;
       background-color: variables.$blue_dk;
-      border:1px solid variables.$gray;
+      // border:1px solid variables.$gray;
       display: inline-block;
+      box-shadow: 1px 1px 0 1px hsl(240, 50%, 5%);
+      @include mixins.normalize-link($hover: unset, $color: variables.$blue_lt);
+
       &:hover {
         background-color: variables.$blue_dk;
         transform: scale(1.05);
       }
     }
-  }
-  a {
-    @include mixins.normalize-link($hover: unset, $color: variables.$blue_lt);
   }
 }
