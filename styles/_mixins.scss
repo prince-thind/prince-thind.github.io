@@ -1,4 +1,4 @@
-@mixin normalize-link($color: white,$hover:hsl(0, 100%, 15%)) {
+@mixin normalize-link($color: white,$hover) {
   color: $color;
   text-decoration: none;
   &:visited {

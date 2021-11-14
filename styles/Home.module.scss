@@ -34,7 +34,7 @@
     background-color: variables.$blue_dk;
     width: max-content;
     margin: 1rem auto;
-    @include mixins.normalize-link($color: variables.$blue_lt);
+    @include mixins.normalize-link($color: variables.$blue_lt, $hover:hsl(0, 100%, 15%));
     box-shadow: 1px 1px 0 1px hsl(240, 50%, 5%);
     &:hover{
       background-color: hsl(240, 40%, 10%);
@@ -99,6 +99,8 @@
       &:hover {
         background-color: variables.$blue_dk;
         transform: scale(1.05);
+      background-color: hsl(240, 40%, 10%);
+
       }
     }
   }

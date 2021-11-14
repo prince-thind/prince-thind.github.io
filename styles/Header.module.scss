@@ -33,5 +33,5 @@
 .nav-item {
   display: block;
   padding: 0.7em;
-  @include mixins.normalize-link();
+  @include mixins.normalize-link($hover:hsl(0, 100%, 15%));
 }
