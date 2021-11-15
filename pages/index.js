@@ -26,7 +26,7 @@ export default function Home() {
         />
         <div className={styles["details"]}>
           <p>Hello, I am Prince Thind, a Full Stack web developer and Programmer working to create the best websites with modern technologies like React and ExpressJS. Visit my Dedicated <Link href="/about"><a>about</a></Link> Page to know more about me.</p>
-          <ul>
+          <ul className={styles["details-list"]}>
             <li>
               <Link href="/work">
                 <a>work</a>
