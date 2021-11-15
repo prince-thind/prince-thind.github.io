@@ -1,7 +1,7 @@
 import styles from "../styles/Home.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import profilePic from "../images/brand-logo.png";
+import profilePic from "../images/profile-pic.jpg";
 import Head from "next/head";
 import Resume from "../components/resume";
 
@@ -21,8 +21,8 @@ export default function Home() {
         <Image
           src={profilePic}
           alt="profile picture"
-          height="200"
-          width="200"
+          height="250"
+          width="250"
         />
         <div className={styles["brief"]}>
           <h3>About me</h3>
