@@ -10,7 +10,7 @@
   flex-direction: column;
   // margin-top: 5rem;
   position: relative;
-  bottom:5rem;
+  // bottom:5rem;
 
   h1 {
     font-size: 3rem;
@@ -41,7 +41,7 @@
     border: 3px solid hsl(240, 40%, 5%);
     background-color: variables.$blue_dk;
     width: max-content;
-    margin: 1rem auto;
+    margin: 2rem auto;
     @include mixins.normalize-link(
       $color: variables.$blue_lt,
       $hover: hsl(240, 40%, 10%)
@@ -56,7 +56,7 @@
   align-items: center;
   gap: 5vw;
   background-color: variables.$black_dk;
-  flex: 1;
+  // flex: 1;
   padding: 0 5rem;
   @include mixins.small-screen{
     flex-direction: column;
@@ -71,22 +71,33 @@
   }
 }
 
-.details {
-  padding: 1rem;
-  background: variables.$darkGradient;
-  border: 1px solid variables.$gray;
-  align-self: stretch;
+.brief {
+  padding: 0 7rem;
+  display: flex;
+  // justify-content: center;
+  box-sizing: border-box;
+  flex-direction: column;
   max-width: 70%;
   margin: 2rem 0;
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding-top: 2rem;
-
+  // padding-top: 2rem;
+  min-height: 50vh;
   @include mixins.small-screen {
     margin: 2rem auto;
   }
+  h3{
+    font-size: 2rem;
+  }
+}
+
+.details{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .details-list {
@@ -104,7 +115,7 @@
   a {
     padding: 0.5rem 1rem;
     background-color: variables.$blue_dk;
-    border-radius: 100px;
+    // border-radius: 100px;
     display: inline-block;
     box-shadow: 1px 1px 0 1px hsl(240, 50%, 5%);
     @include mixins.normalize-link($hover: unset, $color: variables.$blue_lt);
