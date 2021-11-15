@@ -2,13 +2,15 @@
 @use "./mixins";
 
 .intro {
-  // --screen:50vh;
-  // margin: var(--screen) 0;
-  min-height: 100vh;
+
+  min-height: calc(100vh - 5rem);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  // margin-top: 5rem;
+  position: relative;
+  bottom:5rem;
 
   h1 {
     font-size: 3rem;
