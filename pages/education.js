@@ -2,6 +2,8 @@ import Head from "next/head";
 import CollapseBar from "../components/collapase-bar";
 import styles from "../styles/Education.module.scss";
 import education from "../lib/education";
+import certification from "../lib/certification";
+import Grid from '../components/grid'
 
 export default function Education() {
   return (
@@ -34,10 +36,9 @@ export default function Education() {
                     {project.grades}
                   </div>
                   <ul className={styles["education-institute-details"]}>
-                    {project.points.map((point) => {
+                    {project.points.map((point,i) => {
                       return (
-                        // eslint-disable-next-line react/jsx-key
-                        <li className={styles["education-institure-points"]}>
+                        <li key={i} className={styles["education-institure-points"]}>
                           {point}
                         </li>
                       );
@@ -51,7 +52,7 @@ export default function Education() {
       </section>{" "}
       <section>
         <CollapseBar topic="Certification">
-  
+       <Grid type="certification" projects={certification}/>
         </CollapseBar>
       </section>
     </div>
