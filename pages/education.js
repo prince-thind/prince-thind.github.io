@@ -1,7 +1,7 @@
 import Head from "next/head";
 import CollapseBar from "../components/collapase-bar";
 import styles from "../styles/Education.module.scss";
-import education from "../components/education";
+import education from "../lib/education";
 
 export default function Education() {
   return (
