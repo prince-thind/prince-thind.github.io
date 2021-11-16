@@ -1,9 +1,7 @@
 @use "variables";
 @use "mixins";
 
-.education {
-    padding: 1rem 0;
-  }
+
   .education-heading {
     padding-top: 1rem;
   }
@@ -13,7 +11,7 @@
     margin-bottom: 2rem;
   }
   .education-list {
-    width: 50%;
+    width: 75%;
     margin: auto;
     list-style-type: none;
   }

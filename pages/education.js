@@ -1,6 +1,7 @@
 import Head from "next/head";
 import CollapseBar from "../components/collapase-bar";
 import styles from "../styles/Education.module.scss";
+import education from "../components/education";
 
 export default function Education() {
   return (
@@ -8,38 +9,50 @@ export default function Education() {
       <Head>
         <title>Education</title>
       </Head>
-      <section className={styles["education"]}>
+      <section>
         <CollapseBar topic="Education">
-        <ul className={styles["education-list"]}>
-          <li className={styles["education-list-item"]}>
-            <div className={styles["education-institute"]}>
-              <div className={styles["education-main"]}>
-                <div className={styles["education-title"]}>
-                  {" "}
-                  B.Tech in CSE (Hons.)
-                </div>
+          <ul className={styles["education-list"]}>
+            {education.map((project) => {
+              return (
+                <li className={styles["education-list-item"]} key={project.id}>
+                  <div className={styles["education-institute"]}>
+                    <div className={styles["education-main"]}>
+                      <div className={styles["education-title"]}>
+                        {" "}
+                        {project.title}
+                      </div>
 
-                <div className={styles["education-institute-name"]}>
-                  (Lovely Professional University)
-                </div>
-              </div>
-              <div className={styles["education-institute-duration"]}>
-                2019-2023
-              </div>
-            </div>
-            <div className={styles["education-institute-grades"]}>CGPA: ~9</div>
-            <ul className={styles["education-institute-details"]}>
-              <li className={styles["education-institure-points"]}>
-                Web Development as Egnineering Minor
-              </li>
-              <li className={styles["education-institure-points"]}>
-                Digital Marketing as Open Minor
-              </li>
-            </ul>
-          </li>
-        </ul>
+                      <div className={styles["education-institute-name"]}>
+                        ({project["institute"]})
+                      </div>
+                    </div>
+                    <div className={styles["education-institute-duration"]}>
+                      {project.duration}
+                    </div>
+                  </div>
+                  <div className={styles["education-institute-grades"]}>
+                    {project.grades}
+                  </div>
+                  <ul className={styles["education-institute-details"]}>
+                    {project.points.map((point) => {
+                      return (
+                        // eslint-disable-next-line react/jsx-key
+                        <li className={styles["education-institure-points"]}>
+                          {point}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </li>
+              );
+            })}
+          </ul>
         </CollapseBar>
-       
+      </section>{" "}
+      <section>
+        <CollapseBar topic="Certification">
+  
+        </CollapseBar>
       </section>
     </div>
   );
