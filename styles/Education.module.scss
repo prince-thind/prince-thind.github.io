@@ -1,54 +1,54 @@
 @use "variables";
 @use "mixins";
 
+.education-heading {
+  padding-top: 1rem;
+}
+.education-ruler {
+  background: linear-gradient(to left, transparent, blue, transparent);
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.education-list {
+  width: 75%;
+  margin: auto;
+  list-style-type: none;
+}
+.education-list-item {
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  padding-bottom: 2rem;
+  border: 2px solid gray;
 
-  .education-heading {
-    padding-top: 1rem;
-  }
-  .education-ruler {
-    background: linear-gradient(to left, transparent, blue, transparent);
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
-  }
-  .education-list {
-    width: 75%;
-    margin: auto;
-    list-style-type: none;
-  }
-  .education-list-item {
-    box-sizing: border-box;
-    padding: 1rem 2rem;
-    padding-bottom: 2rem;
-    border: 2px solid gray;
-  
-    background-color: black;
-    margin: 1rem 0;
-  }
-  .education-institute {
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-  }
-  .education-title {
-    font-size: 1.5rem;
-  }
-  .education-institute-name {
-    color: hsl(240, 40%, 75%);
-  }
-  .education-institute-duration {
-    font-size: 1.5rem;
-  }
-  .education-institute-grades {
-    font-size: 1.2rem;
-    padding: 2rem 1rem 0.5rem 1rem;
-    text-align: left;
-    color: hsl(120, 15%, 50%);
-  }
-  .education-institute-details {
-    padding-left: 1rem;
-    text-align: left;
-  }
-  .education-institute-details > li {
-    padding: 0.5rem 1rem;
-  }
-  
+  background-color: black;
+  margin: 1rem 0;
+}
+.education-institute {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.education-title {
+  font-size: 1.5rem;
+}
+.education-institute-name {
+  color: hsl(240, 40%, 75%);
+}
+.education-institute-duration {
+  font-size: 1.5rem;
+}
+.education-institute-grades {
+  font-size: 1.2rem;
+  padding: 2rem 1rem 0.5rem 1rem;
+  text-align: left;
+  color: hsl(120, 15%, 50%);
+}
+.education-institute-details {
+  padding-left: 1rem;
+  text-align: left;
+}
+.education-institute-details > li {
+  padding: 0.5rem 1rem;
+}
+
+

@@ -1,0 +1,26 @@
+@use "./variables";
+@use "./mixins";
+
+.grid {
+  list-style-type: none;
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  // border:2px solid white;
+  align-items: center;
+}
+.grid-item {
+  padding: 1rem;
+  background-color: black;
+  border: 1px solid variables.$gray;
+  h4 {
+    background-color: black;
+    padding-bottom: 0.5rem;
+  }
+  &:hover{
+      transform: scale(1.05);
+      
+  }
+}
