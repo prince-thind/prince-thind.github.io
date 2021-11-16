@@ -9,7 +9,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   // border:2px solid white;
-  align-items: center;
+  align-items: stretch;
 }
 .grid-item {
   padding: 1rem;
