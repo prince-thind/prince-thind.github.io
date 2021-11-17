@@ -11,10 +11,13 @@ export default function About() {
       <Head>
         <title>About</title>
       </Head>
-      <h2>About</h2>
+     
       <div className={styles["about"]}>
+        <div>
         <Image src={profilePic} width="500" height="500" alt="profile" />
-        <p>
+
+        </div>
+        <div className={styles["about-content"]}>  <h2>About</h2> <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
           tenetur ab dolore unde repellat fugiat enim delectus minus incidunt
           iste hic sit eius, culpa voluptatum odit perferendis officiis. Maxime,
@@ -37,7 +40,8 @@ export default function About() {
           sapiente facere omnis? Minima blanditiis error est accusantium
           asperiores laudantium qui veritatis dolorem. Delectus in veritatis
           repellendus at perferendis illo, sint cumque modi!
-        </p>
+        </p></div>
+      
       </div>
       <h3>Connect with me!</h3>
       <nav>

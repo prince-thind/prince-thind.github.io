@@ -1,0 +1,31 @@
+@use "mixins";
+
+
+.about {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  padding: 1rem 3rem;
+  img {
+    border-radius: 50%;
+    border: 2px solid white !important;
+  }
+  .about-content {
+    padding: 0 5rem;
+    box-sizing: border-box;
+    // background-color: blue;
+  }
+}
+
+.contact-me{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    list-style-type: none;
+    padding:1rem;
+    gap:1rem;
+}
+.contact-me-item{
+    display: block;
+    padding:1rem;
+    background-color: hsl(0,0%,3%);
+    @include mixins.normalize-link($hover:black);
+}
