@@ -11,6 +11,7 @@
   // border:2px solid white;
   align-items: stretch;
 }
+
 .grid-item {
   padding: 1rem;
   background-color: black;
@@ -18,9 +19,33 @@
   h4 {
     background-color: black;
     padding-bottom: 0.5rem;
+    padding: 0.5rem;
   }
-  &:hover{
-      transform: scale(1.05);
-      
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.grid-projects {
+  @extend .grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-item-project {
+  padding: 0;
+  background-color: hsl(0,0%,5%);
+  border: 1px solid variables.$gray;
+
+  h4{
+    padding:0.5rem 0;
+    // background-color: black;
+  }
+  a{
+    display: block;
+    padding:0.5rem 0;
+    @include mixins.normalize-link($hover:black);
+  
+
   }
 }

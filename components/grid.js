@@ -8,7 +8,7 @@ function Grid({ projects, type }) {
       <ul className={styles["grid-projects"]}>
         {projects.map((project) => {
           return (
-            <li key={uniqid()} className={styles["grid-item"]}>
+            <li key={uniqid()} className={styles["grid-item-project"]}>
               <h4>{project.name}</h4>
               <a href={project.live_link}>
                 {" "}
