@@ -42,6 +42,9 @@
     background-color: variables.$blue_dk;
     width: max-content;
     margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include mixins.normalize-link(
       $color: variables.$blue_lt,
       $hover: hsl(240, 40%, 10%)
@@ -116,6 +119,7 @@
     padding: 0.5rem 1rem;
     background-color: variables.$blue_dk;
     // border-radius: 100px;
+    white-space: pre;
     display: inline-block;
     box-shadow: 1px 1px 0 1px hsl(240, 50%, 5%);
     @include mixins.normalize-link($hover: unset, $color: variables.$blue_lt);
@@ -126,3 +130,10 @@
     }
   }
 }
+
+
+.download-icon{
+  font-size: 1.2rem;
+  margin:0 0.5rem;
+}
+

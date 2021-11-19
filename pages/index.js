@@ -4,6 +4,8 @@ import Link from "next/link";
 import profilePic from "../images/profile-pic.jpg";
 import Head from "next/head";
 import Resume from "../components/resume";
+import { faExternalLinkAlt, faLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
   return (
@@ -41,21 +43,29 @@ export default function Home() {
             <ul className={styles["details-list"]}>
               <li>
                 <Link href="/work">
-                  <a>work</a>
+                  <a>
+                    work <FontAwesomeIcon icon={faLink} />
+                  </a>
                 </Link>
               </li>
               <li>
                 <Link href="/education">
-                  <a>Education</a>
+                  <a>
+                    Education <FontAwesomeIcon icon={faLink} />
+                  </a>
                 </Link>
               </li>
               <li>
                 <Link href="/about">
-                  <a>About</a>
+                  <a>
+                    About <FontAwesomeIcon icon={faLink} />
+                  </a>
                 </Link>
               </li>
               <li>
-                <a href="https://github.com/Prince-Thind">Github</a>
+                <a href="https://github.com/Prince-Thind">
+                  Github <FontAwesomeIcon icon={faExternalLinkAlt} />
+                </a>
               </li>
             </ul>
           </div>
