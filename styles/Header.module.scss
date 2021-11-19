@@ -3,7 +3,6 @@
 
 .navbar {
   background-color: variables.$red;
-  // font-family: Verdana, Geneva, Tahoma, sans-serfixedif;
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
@@ -17,6 +16,11 @@
     display: flex;
     list-style-type: none;
   }
+  @include mixins.small-screen() {
+    font-size: 1rem;
+    align-items: center;
+    padding:0;
+  }
 }
 
 .brand {
@@ -29,13 +33,20 @@
   }
   h2 {
     font-size: 1.2rem;
-    // font-family:'Times New Roman', Times, serif;
     padding: 0 0.5rem;
     letter-spacing: 1px;
+
+    @include mixins.small-screen() {
+      font-size: 1rem;
+      padding: 0 0.5rem ;
+    }
   }
 }
 .nav-item {
   display: block;
   padding: 0.7em;
-  @include mixins.normalize-link($hover:hsl(0, 100%, 15%));
+  @include mixins.normalize-link($hover: hsl(0, 100%, 15%));
+  @include mixins.small-screen(){
+    padding: 1rem 0.5rem;
+  }
 }

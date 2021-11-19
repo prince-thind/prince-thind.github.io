@@ -14,7 +14,7 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <section className={styles.intro}>
-        <h1>Hi, I am Prince Thind</h1>
+        <h1>Hi, I am <span>Prince Thind</span></h1>
         <h2>A Full Stack Web Developer</h2>
         <hr />
         <Resume />
@@ -23,8 +23,9 @@ export default function Home() {
         <Image
           src={profilePic}
           alt="profile picture"
-          height="250"
-          width="250"
+          height="200"
+          width="200"
+          className={styles["img"]}
         />
         <div className={styles["brief"]}>
           <h3>About me</h3>
