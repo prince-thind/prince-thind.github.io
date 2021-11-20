@@ -1,3 +1,5 @@
+@use "mixins";
+
 .collapse-bar {
   text-align: left;
   padding: 0.5rem 3rem;
@@ -10,13 +12,12 @@
   padding: 1rem 3rem;
 }
 .children {
-//   background-color: hsl(0, 0%, 0%);
-// background-color: hsl(0, 0%, 20%);
   padding-left: 6rem;
   border: none;
-//   margin-bottom:1rem;
-//   border-bottom: 1px solid gray;
-
+  @include mixins.small-screen() {
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+  }
 }
 
 .hidden {
