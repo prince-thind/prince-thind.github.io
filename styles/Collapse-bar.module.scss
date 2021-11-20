@@ -1,12 +1,19 @@
-.collapse-bar{
-    text-align: left;
-    padding:1rem 3rem;
-    // margin:0 2rem;
-    background-color: hsl(0,0%,0%);
-    border:1px solid gray;
-    border-left: none;
-    border-right: none;
+.collapse-bar {
+  text-align: left;
+  padding: 0.5rem 3rem;
+  background-color: hsl(0, 0%, 0%);
+  border: 1px solid gray;
+  border-left: none;
+  border-right: none;
 }
-.hidden{
-    display: none;
+.big {
+  padding: 1rem 3rem;
+}
+.children {
+  background-color: hsl(0, 0%, 7%);
+  padding-left: 6rem;
+}
+
+.hidden {
+  display: none;
 }

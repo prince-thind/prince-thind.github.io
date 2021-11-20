@@ -4,6 +4,8 @@ import CollapseBar from "../components/collapase-bar";
 import Grid from "../components/grid";
 import uniqid from "uniqid";
 
+
+
 export default function Work() {
   const types = Object.keys(projects);
 
@@ -12,14 +14,15 @@ export default function Work() {
       <Head>
         <title>Work</title>
       </Head>
-      <h2>Projects</h2>
+      <CollapseBar topic="Projects" type="big">
       {types.map((type) => {
         return (
-          <CollapseBar topic={type} key={uniqid()}>
+          <CollapseBar topic={type} key={uniqid()} type="children">
             <Grid projects={projects[type]} type="github" />
           </CollapseBar>
         );
       })}
+      </CollapseBar>
     </div>
   );
 }
