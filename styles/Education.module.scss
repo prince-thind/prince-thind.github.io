@@ -51,4 +51,18 @@
   padding: 0.5rem 1rem;
 }
 
+@include mixins.small-screen(){
+  .education-list {
+    width: 90%;
+  }
+  .education * {
+    font-size: 1em;
+  }
+  .education-list-item {
+    padding: 1rem;
+  }
+  .education-institute-name {
+    font-size: 0.8em;
+  }
+}
 
