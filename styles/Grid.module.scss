@@ -29,23 +29,23 @@
 
 .grid-projects {
   @extend .grid;
-  grid-template-columns: repeat(2, 1fr);
+  // grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-item-project {
-  padding: 0;
-  background-color: hsl(0,0%,5%);
-  border: 1px solid variables.$gray;
+  // padding: 1rem;
+  // border-radius: 30px;
+  background-color: hsl(0, 0%, 5%);
 
-  h4{
-    padding:0.5rem 0;
-    // background-color: black;
-  }
-  a{
-    display: block;
-    padding:0.5rem 0;
-    @include mixins.normalize-link($hover:black);
-  
+  // border: 1px solid variables.$gray;
 
+  h4 {
+    padding: 1rem 0;
+    background-color: black;
   }
+}
+.source-link {
+  display: block;
+  padding: 0.5rem 0;
+  @include mixins.normalize-link($hover: black);
 }

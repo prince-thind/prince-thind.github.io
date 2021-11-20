@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Grid.module.scss";
-import uniqid from 'uniqid'
+import uniqid from "uniqid";
 
 function Grid({ projects, type }) {
   if (type === "github")
@@ -13,13 +13,16 @@ function Grid({ projects, type }) {
               <a href={project.live_link}>
                 {" "}
                 <Image
+                  className={styles["img"]}
                   src={project.image}
                   height="450"
                   width="800"
                   alt="project"
                 />
               </a>
-              <a href={project.link} className={styles["source-link"]}>View Source on Github</a>
+              <a href={project.link} className={styles["source-link"]}>
+                View Source on Github
+              </a>
             </li>
           );
         })}
