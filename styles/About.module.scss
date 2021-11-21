@@ -2,11 +2,7 @@
 @use "./variables";
 
 .profile-picture {
-  // border-radius: 50%;
   border: 2px solid white !important;
-  // @include mixins.small-screen() {
-  //   margin: 1rem !important;
-  // }
 }
 .caption {
   white-space: pre;
@@ -30,9 +26,12 @@
   .about-content {
     padding: 0 5rem;
     box-sizing: border-box;
-    // background-color: blue;
     @include mixins.small-screen() {
       padding: 0;
+    }
+    p{
+      font-size: 1.2rem;
+      line-height: 1.5rem;
     }
   }
 }

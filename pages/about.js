@@ -17,8 +17,8 @@ export default function About() {
         <div>
           <Image
             src={profilePic}
-            width="500"
-            height="500"
+            width="300"
+            height="300"
             alt="profile"
             className={styles["profile-picture"]}
           />
@@ -30,30 +30,20 @@ export default function About() {
           {" "}
           <h2>About</h2> <hr className={styles["hr"]} />
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
-            odio quam alias quos hic adipisci repellendus perspiciatis laborum.
-            Vel placeat aliquid cupiditate mollitia pariatur, porro aspernatur
-            sapiente possimus doloremque aliquam ab quibusdam quidem delectus
-            eos, corporis cumque facilis. Et asperiores sapiente quisquam quod
-            nemo, debitis eos, cum aspernatur nulla labore, aliquid sequi fuga
-            eius modi! Nobis beatae animi eum expedita recusandae voluptate
-            iure, incidunt laborum amet aut placeat accusantium cumque facere
-            eos quidem dolore et ipsum, nulla natus perferendis iusto dicta
-            praesentium maxime consequuntur? Suscipit nisi, quod minus placeat
-            esse qui accusamus accusantium sunt minima consectetur. Magni
-            laudantium quam iste unde dolorum recusandae necessitatibus id
-            soluta eius cupiditate, quo ut ducimus aspernatur at. Sed, iusto
-            asperiores. Ipsa, eaque? Nemo atque aliquid minus laborum veniam
-            quibusdam labore porro quia. Officiis molestiae error eaque
-            asperiores sequi cupiditate dolores, dolorum impedit totam quisquam.
-            Quae adipisci deleniti beatae nam esse incidunt, in explicabo
-            possimus repudiandae. Eaque quibusdam accusantium nemo optio,
-            voluptate dolorum debitis libero quae veniam quaerat mollitia
-            excepturi, aut neque? Saepe, distinctio! Velit tenetur saepe
-            temporibus ex earum aperiam quae itaque aut, odio inventore. Libero
-            eligendi ipsum quisquam quasi sunt vel, quidem quos animi ducimus
-            facilis consequuntur aliquid labore voluptates dignissimos beatae.
-            Modi.
+            Hello, I am Prince Thind, a full stack developer and designer. With
+            50+ Projects on my github I identify as a competent web developer.
+            Though Programming has been my interest since High School, I have
+            been working in the field of web development only for over a year
+            now. Also, with my 8.5+ CGPA in B.tech CSE(Hons.), I must admit that
+            maintaining an excellent Academic record along with a good developer
+            profile is not as easy as it seems. Besides, I also identify as an
+            outgoing introvert I do not like small talk but I absolutely enjoy
+            deep Conversation perhaps this explains why I am always looking for
+            someone to collaborate on github. Although I might seem very active
+            in tech world, I also absolutely Enjoy nature too. Gardening is one
+            of my prime hobbies. Finally, As a student in his 6th Semester I am
+            actively seeking internship opportunites and I look foward to
+            connecting to people with similar interests.
           </p>
         </div>
       </div>
