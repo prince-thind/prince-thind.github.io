@@ -1,31 +1,70 @@
 @use "mixins";
+@use "./variables";
 
+.profile-picture {
+  // border-radius: 50%;
+  border: 2px solid white !important;
+}
+.caption {
+  white-space: pre;
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
 
 .about {
   display: grid;
-  grid-template-columns: 4fr 8fr;
+  grid-template-columns: 3fr 8fr;
+
   padding: 1rem 3rem;
-  img {
-    border-radius: 50%;
-    border: 2px solid white !important;
-  }
+
   .about-content {
     padding: 0 5rem;
     box-sizing: border-box;
     // background-color: blue;
   }
 }
-
-.contact-me{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    list-style-type: none;
-    padding:1rem;
-    gap:1rem;
+.hr {
+  width: 75%;
+  border: none;
+  padding: 1px;
+  margin: auto;
+  margin-bottom: 1rem;
+  background: linear-gradient(
+    to left,
+    variables.$black,
+    variables.$red_pure,
+    variables.$black
+  );
+  @include mixins.small-screen() {
+    margin-top: 0.5rem;
+  }
 }
-.contact-me-item{
-    display: block;
+.contact-me {
+  background-color: hsl(0, 0%, 3%);
+  padding-bottom: 1rem;
+  h3 {
+    font-size: 2rem;
     padding:1rem;
-    background-color: hsl(0,0%,3%);
-    @include mixins.normalize-link($hover:black);
+  }
+}
+
+.contact-list {
+  // display: grid;
+  // grid-template-columns: repeat(8, 1fr);
+
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  // padding: 1rem;
+  gap: 2rem;
+  width: 50%;
+  margin: auto;
+}
+.contact-me-item {
+  display: block;
+  font-size: 5rem;
+  // padding: 1rem;
+  // background-color: hsl(0, 0%, 3%);
+  @include mixins.normalize-link($hover: black);
 }
