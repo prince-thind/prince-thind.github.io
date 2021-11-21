@@ -58,11 +58,17 @@
   .education * {
     font-size: 1em;
   }
+  .education-title{
+    font-size: 1.2rem;
+  }
   .education-list-item {
     padding: 1rem;
   }
   .education-institute-name {
-    font-size: 0.8em;
+    font-size: 1rem;
+  }
+  .education-institute-duration {
+    font-size: 1rem;
   }
 }
 
