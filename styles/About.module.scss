@@ -4,24 +4,36 @@
 .profile-picture {
   // border-radius: 50%;
   border: 2px solid white !important;
+  // @include mixins.small-screen() {
+  //   margin: 1rem !important;
+  // }
 }
 .caption {
   white-space: pre;
   display: block;
   margin-top: 1rem;
   font-size: 1.5rem;
+  @include mixins.small-screen() {
+    margin-bottom: 2rem;
+  }
 }
 
 .about {
   display: grid;
   grid-template-columns: 3fr 8fr;
-
   padding: 1rem 3rem;
-
+  @include mixins.small-screen() {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
   .about-content {
     padding: 0 5rem;
     box-sizing: border-box;
     // background-color: blue;
+    @include mixins.small-screen() {
+      padding: 0;
+    }
   }
 }
 .hr {
@@ -45,14 +57,15 @@
   padding-bottom: 1rem;
   h3 {
     font-size: 2rem;
-    padding:1rem;
+    padding: 1rem;
+    @include mixins.small-screen() {
+      font-size: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
   }
 }
 
 .contact-list {
-  // display: grid;
-  // grid-template-columns: repeat(8, 1fr);
-
   display: flex;
   justify-content: center;
   list-style-type: none;
@@ -60,6 +73,10 @@
   gap: 2rem;
   width: 50%;
   margin: auto;
+  @include mixins.small-screen() {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .contact-me-item {
   display: block;
@@ -67,4 +84,7 @@
   // padding: 1rem;
   // background-color: hsl(0, 0%, 3%);
   @include mixins.normalize-link($hover: black);
+  @include mixins.small-screen() {
+    font-size: 2rem;
+  }
 }
