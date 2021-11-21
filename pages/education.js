@@ -12,7 +12,7 @@ export default function Education() {
         <title>Education</title>
       </Head>
       <section>
-        <CollapseBar topic="Education">
+        <CollapseBar topic="Education" type="big">
           <ul className={styles["education-list"]}>
             {education.map((project) => {
               return (
@@ -51,7 +51,7 @@ export default function Education() {
         </CollapseBar>
       </section>{" "}
       <section>
-        <CollapseBar topic="Certification">
+        <CollapseBar topic="Certification" type="big">
        <Grid type="certification" projects={certification}/>
         </CollapseBar>
       </section>
