@@ -2,8 +2,31 @@ import Link from "next/link";
 import Image from "next/image";
 import brandLogo from "../images/brand-logo.png";
 import styles from "../styles/Header.module.scss";
+import { useState } from "react";
+import CustomLink from "./CustomLink";
+import uniqid from "uniqid";
 
 export default function Header() {
+  const [activeTab, setActiveTab] = useState("home");
+  const pages = [
+    {
+      name: "home",
+      link: "/",
+    },
+    {
+      name: "work",
+      link: "/work",
+    },
+    {
+      name: "education",
+      link: "/education",
+    },
+    {
+      name: "about",
+      link: "/about",
+    },
+  ];
+
   return (
     <header>
       <nav className={styles.navbar}>
@@ -24,26 +47,16 @@ export default function Header() {
           </a>
         </Link>
         <ul>
-          <li>
-            <Link href="/">
-              <a className={styles["nav-item"]}>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/work">
-              <a className={styles["nav-item"]}>Work</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/education">
-              <a className={styles["nav-item"]}>Education</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about">
-              <a className={styles["nav-item"]}>About</a>
-            </Link>
-          </li>
+          {pages.map((page) => {
+            return (
+              <CustomLink
+                key={uniqid()}
+                linkInfo={{ ...page }}
+                activeTab={activeTab}
+                setActiveTab={setActiveTab}
+              />
+            );
+          })}
         </ul>
       </nav>
     </header>
