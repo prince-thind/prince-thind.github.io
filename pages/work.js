@@ -16,19 +16,19 @@ export default function Work() {
       <Head>
         <title>Work</title>
       </Head>
-      <CollapseBar topic="Projects" type="big">
+      <CollapseBar topic="Projects" >
         {types.map((type) => {
           return (
-            <CollapseBar topic={type} key={uniqid()} type="children">
+            <CollapseBar topic={type} key={uniqid()} type="child">
               <Grid projects={projects[type]} type="github" />
             </CollapseBar>
           );
         })}
       </CollapseBar>
-      <CollapseBar topic="Skills" type="big">
+      <CollapseBar topic="Skills" >
         {skillsList.map((skill) => {
           return (
-            <CollapseBar topic={skill} key={uniqid()} type="children">
+            <CollapseBar topic={skill} key={uniqid()} type="child">
               <ul className={styles["skills-list"]}>
                 {skills[skill].map((subSkill) => {
                   return <li key={uniqid()}>{subSkill}</li>;

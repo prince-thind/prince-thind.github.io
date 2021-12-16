@@ -1,33 +1,30 @@
-import { useState } from "react";
 import styles from "../styles/Collapse-bar.module.scss";
-import { faMinusSquare, faPlusSquare } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMinusSquare, faPlusSquare } from "@fortawesome/free-solid-svg-icons";
 
-function CollapseBar(props) {
+function CollapseBar({type,children, topic}) {
   const [collpased, setCollapased] = useState(true);
 
   const collapsedIcon = <FontAwesomeIcon icon={faMinusSquare} />;
   const expandIcon = <FontAwesomeIcon icon={faPlusSquare} />;
 
-  const customClasses = [styles["collapse-bar"]];
-  
-  if (props.type === "big") {
-    customClasses.push(styles["big"]);
-  } else if (props.type == "children") {
-    customClasses.push(styles["children"]);
+  let customStyle = styles["collapse-bar"];
+  if(type=="child"){
+    customStyle+=` ${styles["child-collapse-bar"]}`;
   }
 
   return (
     <>
       <h2
-        className={customClasses.join(" ")}
+        className={customStyle}
         onClick={() => {
           setCollapased((collpased) => !collpased);
         }}
       >
-        {collpased ? expandIcon : collapsedIcon} {props.topic}
+        {collpased ? expandIcon : collapsedIcon} {topic}
       </h2>
-      <div className={collpased ? styles["hidden"] : ""}> {props.children}</div>
+      <div className={collpased ? styles["hidden"] : ""}> {children}</div>
     </>
   );
 }
