@@ -1,5 +1,5 @@
 import Head from "next/head";
-import CollapseBar from "../components/collapase-bar";
+import CollapseBar from "../components/CollapseBar";
 import styles from "../styles/Education.module.scss";
 import education from "../lib/education";
 import certification from "../lib/certification";
