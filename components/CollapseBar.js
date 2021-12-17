@@ -3,15 +3,20 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
-function CollapseBar({type,children, topic}) {
+function CollapseBar({ type, children, topic }) {
   const [collpased, setCollapased] = useState(true);
 
   const collapsedIcon = <FontAwesomeIcon icon={faAngleDown} />;
   const expandIcon = <FontAwesomeIcon icon={faAngleUp} />;
 
   let customStyle = styles["collapse-bar"];
-  if(type=="child"){
-    customStyle+=` ${styles["child-collapse-bar"]}`;
+  if (type == "child") {
+    customStyle += ` ${styles["child-collapse-bar"]}`;
+  }
+
+  let collpasedChildren=null;
+  if(!collpased){
+    collpasedChildren=<div> {children}</div>;
   }
 
   return (
@@ -24,7 +29,7 @@ function CollapseBar({type,children, topic}) {
       >
         {collpased ? expandIcon : collapsedIcon} {topic}
       </h2>
-      <div className={collpased ? styles["hidden"] : ""}> {children}</div>
+      {collpasedChildren}
     </>
   );
 }
