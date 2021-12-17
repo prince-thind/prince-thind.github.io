@@ -1,13 +1,13 @@
 import styles from "../styles/Collapse-bar.module.scss";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMinusSquare, faPlusSquare } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 function CollapseBar({type,children, topic}) {
   const [collpased, setCollapased] = useState(true);
 
-  const collapsedIcon = <FontAwesomeIcon icon={faMinusSquare} />;
-  const expandIcon = <FontAwesomeIcon icon={faPlusSquare} />;
+  const collapsedIcon = <FontAwesomeIcon icon={faAngleDown} />;
+  const expandIcon = <FontAwesomeIcon icon={faAngleUp} />;
 
   let customStyle = styles["collapse-bar"];
   if(type=="child"){
