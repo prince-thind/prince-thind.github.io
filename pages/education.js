@@ -52,7 +52,7 @@ export default function Education() {
       </section>{" "}
       <section>
         <CollapseBar topic="Certification" type="big">
-       <Grid type="certification" projects={certification}/>
+       <Grid items={certification}/>
         </CollapseBar>
       </section>
     </div>

@@ -3,52 +3,31 @@
 
 .grid {
   list-style-type: none;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   align-items: stretch;
   @include mixins.small-screen() {
-  grid-template-columns: repeat(1, 1fr);
-
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 .grid-item {
-  padding: 1rem;
   background-color: black;
   border: 1px solid variables.$gray;
   h4 {
     background-color: black;
-    padding-bottom: 0.5rem;
-    padding: 0.5rem;
-  }
-
-  &:hover {
-    transform: scale(1.02);
-  }
-}
-
-.grid-projects {
-  @extend .grid;
-  // grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-item-project {
-  // padding: 1rem;
-  // border-radius: 30px;
-  background-color: hsl(0, 0%, 5%);
-
-  // border: 1px solid variables.$gray;
-
-  h4 {
     padding: 1rem 0;
-    background-color: black;
+  }
+  &:hover {
+    transform: scale(1.005);
   }
 }
+
 .source-link {
   display: block;
   padding: 0.5rem 0;
-  @include mixins.normalize-link($hover: black);
+  background-color:hsl(0, 0%, 2%);
+  @include mixins.normalize-link($hover:hsl(0, 0%, 0%));
 }

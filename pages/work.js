@@ -20,7 +20,7 @@ export default function Work() {
         {types.map((type) => {
           return (
             <CollapseBar topic={type} key={uniqid()} type="child">
-              <Grid projects={projects[type]} type="github" />
+              <Grid items={projects[type]} />
             </CollapseBar>
           );
         })}
