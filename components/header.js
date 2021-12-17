@@ -10,7 +10,7 @@ export default function Header() {
   const pages = getPages();
 
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.navbar}>
         <Link href="/">
           <a className={styles.brand}>

@@ -1,5 +1,4 @@
 import Header from "./header";
-// import style from "../styles/globals.module.scss";
 
 function Layout(props) {
   return (
