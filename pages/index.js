@@ -1,11 +1,11 @@
-import styles from "../styles/Home.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import profilePic from "../images/profile-pic.jpg";
 import Head from "next/head";
 import Resume from "../components/resume";
+import profilePic from "../images/profile-pic.jpg";
 import { faExternalLinkAlt, faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
@@ -14,7 +14,9 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <section className={styles.intro}>
-        <h1>Hi, I am <span>Prince Thind</span></h1>
+        <h1>
+          Hi, I am <span>Prince Thind</span>
+        </h1>
         <h2>A Full Stack Web Developer</h2>
         <hr />
         <Resume />

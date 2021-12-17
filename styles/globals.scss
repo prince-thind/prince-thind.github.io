@@ -1,12 +1,13 @@
-@use "./variables";
+@import "./variables.css";
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
-  color: variables.$white_lt;
-  background-color: variables.$black;
+  color: var(--text-primary);
+  background-color: var(--primary);
   text-align: center;
   // font-family: "Times New Roman", Times, serif;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -21,14 +22,10 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;  
-  // margin-top: 5rem;
-  // z-index: 1;
 }
 
 .main-footer{
   border: 1px solid white;
   background-color: black;
   padding: 0.5rem;
-  box-sizing: border-box;
-  // transform: translateY(100%);
 }
