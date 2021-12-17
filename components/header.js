@@ -1,31 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import brandLogo from "../images/brand-logo.png";
-import styles from "../styles/Header.module.scss";
-import { useState } from "react";
-import CustomLink from "./CustomLink";
+import { useRouter } from "next/router";
 import uniqid from "uniqid";
+import styles from "../styles/Header.module.scss";
+import brandLogo from "../images/brand-logo.png";
 
 export default function Header() {
-  const [activeTab, setActiveTab] = useState("home");
-  const pages = [
-    {
-      name: "home",
-      link: "/",
-    },
-    {
-      name: "work",
-      link: "/work",
-    },
-    {
-      name: "education",
-      link: "/education",
-    },
-    {
-      name: "about",
-      link: "/about",
-    },
-  ];
+  const router = useRouter();
+  const pages = getPages();
 
   return (
     <header>
@@ -49,16 +31,51 @@ export default function Header() {
         <ul>
           {pages.map((page) => {
             return (
-              <CustomLink
-                key={uniqid()}
-                linkInfo={{ ...page }}
-                activeTab={activeTab}
-                setActiveTab={setActiveTab}
-              />
+              <li key={uniqid()}>
+                <CustomLink
+                  isActive={router.pathname === page.link ? true : false}
+                  page={page}
+                />
+              </li>
             );
           })}
         </ul>
       </nav>
     </header>
   );
+}
+
+function CustomLink({ isActive, page }) {
+  return (
+    <Link href={page.link}>
+      <a
+        className={
+          styles["nav-item"] + (isActive ? ` ${styles["active"]}` : "")
+        }
+      >
+        {page.name}{" "}
+      </a>
+    </Link>
+  );
+}
+
+function getPages() {
+  return [
+    {
+      name: "home",
+      link: "/",
+    },
+    {
+      name: "work",
+      link: "/work",
+    },
+    {
+      name: "education",
+      link: "/education",
+    },
+    {
+      name: "about",
+      link: "/about",
+    },
+  ];
 }
