@@ -5,7 +5,8 @@ import Grid from "../components/grid";
 import uniqid from "uniqid";
 import skills from "../lib/skills";
 import styles from "../styles/Work.module.scss";
-
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Work() {
   const types = Object.keys(projects);
@@ -16,7 +17,21 @@ export default function Work() {
       <Head>
         <title>Work</title>
       </Head>
-      <CollapseBar topic="Projects" >
+      <div className={styles["work-section"]}>
+        <div >
+          <FontAwesomeIcon icon={faBriefcase} className={styles["logo"]}/>
+        </div>
+        <div className={styles["work-description"]}>
+          <h1>Work</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            nemo libero magni neque quibusdam pariatur aspernatur mollitia earum
+            doloribus! Odit! Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Vitae, eaque?
+          </p>
+        </div>
+      </div>
+      <CollapseBar topic="Projects">
         {types.map((type) => {
           return (
             <CollapseBar topic={type} key={uniqid()} type="child">
@@ -25,7 +40,7 @@ export default function Work() {
           );
         })}
       </CollapseBar>
-      <CollapseBar topic="Skills" >
+      <CollapseBar topic="Skills">
         {skillsList.map((skill) => {
           return (
             <CollapseBar topic={skill} key={uniqid()} type="child">

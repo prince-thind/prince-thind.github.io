@@ -1,5 +1,23 @@
 @use "./mixins";
 
+.work-section{
+  display: flex;
+  padding:1rem 3rem;
+  justify-content: center;
+  background-color: var(--primary-dark);
+}
+.logo{
+  font-size: 10rem;
+}
+.work-description{
+  p{
+    width: 85%;
+    margin:auto;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color:var(--text-secondary);
+  }
+}
 
 .skills-list {
   background-color: black;
@@ -7,16 +25,15 @@
   list-style-position: inside;
   text-align: left;
   font-size: 1.2rem;
-  // padding:2rem 0;
   padding-left: 9rem;
   @include mixins.small-screen() {
     padding-left: 5rem;
-    li{
-        font-size: 1rem;
+    li {
+      font-size: 1rem;
     }
   }
-
   li {
     padding: 0.5rem 0;
   }
 }
+
