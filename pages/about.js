@@ -14,11 +14,11 @@ export default function About() {
       </Head>
 
       <div className={styles["about"]}>
-        <div>
+        <div className={styles["about-image"]}>
           <Image
             src={profilePic}
-            width="300"
-            height="300"
+            width="250"
+            height="250"
             alt="profile"
             className={styles["profile-picture"]}
           />

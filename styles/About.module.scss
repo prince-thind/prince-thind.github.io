@@ -1,6 +1,16 @@
 @use "mixins";
-@use "./variables";
 
+.about {
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  padding: 1rem;
+  margin-top: 1rem;
+  @include mixins.small-screen() {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
 .profile-picture {
   border: 2px solid white !important;
 }
@@ -13,42 +23,30 @@
     margin-bottom: 2rem;
   }
 }
-
-.about {
-  display: grid;
-  grid-template-columns: 3fr 8fr;
-  padding: 1rem 3rem;
-  @include mixins.small-screen() {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-  }
-  .about-content {
-    padding: 0 5rem;
-    box-sizing: border-box;
-    @include mixins.small-screen() {
-      padding: 0;
-    }
-    p{
-      font-size: 1.2rem;
-      line-height: 1.5rem;
-    }
-  }
-}
 .hr {
   width: 75%;
   border: none;
   padding: 1px;
   margin: auto;
   margin-bottom: 1rem;
-  background: linear-gradient(
-    to left,
-    variables.$black,
-    variables.$red_pure,
-    variables.$black
-  );
+  background: linear-gradient(to left, transparent, red, transparent);
+
   @include mixins.small-screen() {
     margin-top: 0.5rem;
+  }
+}
+.about-image {
+  align-self: center;
+}
+.about-content {
+  padding: 0 5rem;
+  box-sizing: border-box;
+  @include mixins.small-screen() {
+    padding: 0;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }
 .contact-me {
@@ -68,7 +66,6 @@
   display: flex;
   justify-content: center;
   list-style-type: none;
-  // padding: 1rem;
   gap: 2rem;
   width: 50%;
   margin: auto;
@@ -80,8 +77,6 @@
 .contact-me-item {
   display: block;
   font-size: 5rem;
-  // padding: 1rem;
-  // background-color: hsl(0, 0%, 3%);
   @include mixins.normalize-link($hover: black);
   @include mixins.small-screen() {
     font-size: 2rem;
