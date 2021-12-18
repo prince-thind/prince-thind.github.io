@@ -4,7 +4,7 @@ import Grid from "../components/grid";
 import uniqid from "uniqid";
 import skills from "../lib/skills";
 import styles from "../styles/Work.module.scss";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase as Icon } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import projects from "../lib/projects";
@@ -21,7 +21,7 @@ export default function Work() {
       </Head>
       <div className={styles["work-section"]}>
         <div>
-          <FontAwesomeIcon icon={faBriefcase} className={styles["logo"]} />
+          <FontAwesomeIcon icon={Icon} className={styles["logo"]} />
         </div>
         <section className={styles["work-description"]}>
           <h1>Work</h1>
