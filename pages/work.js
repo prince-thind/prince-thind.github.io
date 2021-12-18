@@ -4,7 +4,10 @@ import Grid from "../components/grid";
 import uniqid from "uniqid";
 import skills from "../lib/skills";
 import styles from "../styles/Work.module.scss";
-import { faBriefcase as Icon } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBriefcase as Icon,
+  faAddressCard,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import projects from "../lib/projects";
@@ -19,20 +22,20 @@ export default function Work() {
       <Head>
         <title>Work</title>
       </Head>
-      <div className={styles["work-section"]}>
+      <section className={styles["work-section"]}>
         <div>
           <FontAwesomeIcon icon={Icon} className={styles["logo"]} />
         </div>
-        <section className={styles["work-description"]}>
-          <h1>Work</h1>
+        <div>
+          <h2>Work</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
             nemo libero magni neque quibusdam pariatur aspernatur mollitia earum
             doloribus! Odit! Lorem ipsum dolor sit amet, consectetur adipisicing
             elit. Vitae, eaque?
           </p>
-        </section>
-      </div>
+        </div>
+      </section>
       <section className={styles["highlights"]}>
         <h2 className={styles["highlights-heading"]}>Highlights</h2>
         <hr className="hr" />
@@ -61,6 +64,15 @@ export default function Work() {
             );
           })}
         </CollapseBar>
+      </section>
+      <section className={styles["work-section"]}>
+        <div>
+          <FontAwesomeIcon icon={faAddressCard} className={styles["logo"]} />
+        </div>
+        <div>
+          <h2>Interested in More?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, esse adipisci? Rerum facilis, maiores doloremque recusandae fugiat porro omnis eveniet, aut minima sed, incidunt eos pariatur animi ipsam laboriosam soluta.</p>
+        </div>
       </section>
     </div>
   );

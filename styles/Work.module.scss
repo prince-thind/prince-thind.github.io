@@ -3,13 +3,7 @@
 .work-section {
   display: flex;
   padding: 1rem 3rem;
-  justify-content: center;
   background-color: var(--primary-dark);
-}
-.logo {
-  font-size: 10rem;
-}
-.work-description {
   p {
     width: 85%;
     margin: auto;
@@ -17,12 +11,23 @@
     font-size: 1.5rem;
     color: var(--text-secondary);
   }
+  h2{
+    font-size: 2rem;
+  }
 }
+.logo {
+  font-size: 10rem;
+}
+
 .highlights-heading {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   font-size: 2rem;
 }
+.collapse-bars {
+  margin-bottom: 5rem;
+}
+
 .skills-list {
   background-color: black;
   list-style-type: disc;
@@ -39,7 +44,4 @@
   li {
     padding: 0.5rem 0;
   }
-}
-.collapse-bars {
-  margin-bottom: 10rem;
 }
