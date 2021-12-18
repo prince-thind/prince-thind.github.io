@@ -14,23 +14,24 @@ function CollapseBar({ type, children, topic }) {
     customStyle += ` ${styles["child-collapse-bar"]}`;
   }
 
-  let collpasedChildren=null;
-  if(!collpased){
-    collpasedChildren=<div> {children}</div>;
+  let collpasedChildren = null;
+  if (!collpased) {
+    collpasedChildren = <div> {children}</div>;
   }
 
   return (
-    <>
+    <div className={styles["collapse-container"]}>
       <h2
         className={customStyle}
         onClick={() => {
           setCollapased((collpased) => !collpased);
         }}
       >
-        {collpased ? expandIcon : collapsedIcon} {topic}
+        {collpased ? expandIcon : collapsedIcon} {topic} 
+        {/* {collpased ? expandIcon : collapsedIcon} */}
       </h2>
       {collpasedChildren}
-    </>
+    </div>
   );
 }
 

@@ -49,8 +49,6 @@ export default function Education() {
             })}
           </ul>
         </CollapseBar>
-      </section>{" "}
-      <section>
         <CollapseBar topic="Certification" type="big">
        <Grid items={certification}/>
         </CollapseBar>
