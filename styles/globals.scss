@@ -1,3 +1,4 @@
+@use "mixins";
 @import "./variables.css";
 
 * {
@@ -27,4 +28,17 @@ main {
   border: 1px solid white;
   background-color: black;
   padding: 0.5rem;
+}
+
+.hr {
+  width: 75%;
+  border: none;
+  padding: 1px;
+  margin: auto;
+  margin-bottom: 1rem;
+  background: linear-gradient(to left, transparent, red, transparent);
+
+  @include mixins.small-screen() {
+    margin-top: 0.5rem;
+  }
 }

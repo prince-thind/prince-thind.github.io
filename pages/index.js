@@ -18,7 +18,7 @@ export default function Home() {
           Hi, I am <span>Prince Thind</span>
         </h1>
         <h2>A Full Stack Web Developer</h2>
-        <hr />
+        <hr  className="hr"/>
         <Resume />
       </section>
       <section className={styles["main-section"]}>

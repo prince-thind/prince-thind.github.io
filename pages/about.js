@@ -28,7 +28,7 @@ export default function About() {
         </div>
         <div className={styles["about-content"]}>
           {" "}
-          <h2>About</h2> <hr className={styles["hr"]} />
+          <h2>About</h2> <hr className="hr" />
           <p>
             Hello, I am Prince Thind, a full stack developer and designer. With
             50+ Projects on my github I identify as a competent web developer.
@@ -49,7 +49,7 @@ export default function About() {
       </div>
       <div className={styles["contact-me"]}>
         <h3>Connect with me!</h3>
-        <hr className={styles["hr"]} />
+        <hr className="hr" />
         <nav>
           <ul className={styles["contact-list"]}>
             {socialLinks.map((media) => {
