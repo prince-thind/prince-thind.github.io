@@ -1,5 +1,39 @@
 @use "mixins";
-.education{
+
+.section {
+  display: flex;
+  padding: 1rem 3rem;
+  background-color: var(--primary-dark);
+  p {
+    width: 85%;
+    margin: auto;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  svg {
+    font-size: 10rem;
+  }
+}
+.highlights-heading {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+.highlights-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+//old styles
+.education {
   margin-bottom: 10rem;
 }
 
@@ -53,14 +87,14 @@
   padding: 0.5rem 1rem;
 }
 
-@include mixins.small-screen(){
+@include mixins.small-screen() {
   .education-list {
     width: 90%;
   }
   .education * {
     font-size: 1em;
   }
-  .education-title{
+  .education-title {
     font-size: 1.2rem;
   }
   .education-list-item {
@@ -73,4 +107,3 @@
     font-size: 1rem;
   }
 }
-
