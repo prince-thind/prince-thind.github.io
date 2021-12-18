@@ -7,7 +7,7 @@ import Grid from '../components/grid'
 
 export default function Education() {
   return (
-    <div>
+    <div className={styles["education"]}>
       <Head>
         <title>Education</title>
       </Head>
