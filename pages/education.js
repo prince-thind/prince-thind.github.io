@@ -5,19 +5,19 @@ import styles from "../styles/Education.module.scss";
 import education from "../lib/education";
 import certification from "../lib/certification";
 import Grid from "../components/grid";
-import { faBookReader } from "@fortawesome/free-solid-svg-icons";
+import { faBookReader, faUniversity } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import class10ResultPic from "../images/achivements/class10Result.png";
 
 export default function Education() {
   return (
-    <div className={styles["education"]}>
+    <div >
       <Head>
         <title>Education</title>
       </Head>
       <section className={styles["section"]}>
         <div>
-          <FontAwesomeIcon icon={faBookReader} />
+          <FontAwesomeIcon icon={faUniversity } />
         </div>
         <div>
           <h2>Education</h2>
@@ -57,7 +57,7 @@ export default function Education() {
           </div>
         </div>
       </section>
-      <section>
+      <section className={styles["education"]}>
         <CollapseBar topic="Education">
           <ul className={styles["education-list"]}>
             {education.map((project) => {
@@ -101,6 +101,19 @@ export default function Education() {
         <CollapseBar topic="Certification" type="big">
           <Grid items={certification} />
         </CollapseBar>
+      </section>
+      <section className={styles["section"]}>
+        <div>
+          <FontAwesomeIcon icon={faBookReader} />
+        </div>
+        <div>
+          <h2>Interested in More?</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
+            perferendis quaerat id alias. Delectus reprehenderit facilis aperiam
+            ullam distinctio! Et?
+          </p>
+        </div>
       </section>
     </div>
   );
