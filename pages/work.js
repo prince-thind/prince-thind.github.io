@@ -1,21 +1,27 @@
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import CollapseBar from "../components/CollapseBar";
 import Grid from "../components/grid";
 import uniqid from "uniqid";
 import skills from "../lib/skills";
 import styles from "../styles/Work.module.scss";
-import {
-  faBriefcase as Icon,
-  faAddressCard,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import projects from "../lib/projects";
+import projectsStatic from "../lib/projects";
 import highlightProjects from "../lib/highlightProjects";
 
 export default function Work() {
-  const types = Object.keys(projects);
   const skillsList = Object.keys(skills);
+
+  const [projects, setProjects] = useState({ "loading...": [] });
+  const types = Object.keys(projects);
+
+  useEffect(() => {
+    (async () => {
+      setProjects(await getProjects());
+    })();
+  }, []);
 
   return (
     <div>
@@ -24,7 +30,7 @@ export default function Work() {
       </Head>
       <section className={styles["work-section"]}>
         <div>
-          <FontAwesomeIcon icon={Icon} className={styles["logo"]} />
+          <FontAwesomeIcon icon={faBriefcase} className={styles["logo"]} />
         </div>
         <div>
           <h2>Work</h2>
@@ -71,9 +77,23 @@ export default function Work() {
         </div>
         <div>
           <h2>Interested in More?</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, esse adipisci? Rerum facilis, maiores doloremque recusandae fugiat porro omnis eveniet, aut minima sed, incidunt eos pariatur animi ipsam laboriosam soluta.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+            esse adipisci? Rerum facilis, maiores doloremque recusandae fugiat
+            porro omnis eveniet, aut minima sed, incidunt eos pariatur animi
+            ipsam laboriosam soluta.
+          </p>
         </div>
       </section>
     </div>
   );
+}
+
+async function getProjects() {
+  await sleep(5);
+  return projectsStatic;
+}
+
+async function sleep(n) {
+  return new Promise((res) => setTimeout(res, n * 1000));
 }
