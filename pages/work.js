@@ -90,8 +90,8 @@ export default function Work() {
 }
 
 async function getProjects() {
-  await sleep(5);
-  return projectsStatic;
+  const response=await (await fetch("api/repos-info")).json();
+  return response;
 }
 
 async function sleep(n) {
