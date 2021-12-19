@@ -1,5 +1,6 @@
-import Image from "next/image";
 import styles from "../styles/Grid.module.scss";
+
+import Image from "next/image";
 import uniqid from "uniqid";
 
 function Grid({ items }) {
@@ -10,7 +11,6 @@ function Grid({ items }) {
           <li key={uniqid()} className={styles["grid-item"]}>
             <h4>{project.name}</h4>
             <a href={project.imageLink}>
-              {" "}
               <Image
                 className={styles["img"]}
                 src={project.image}
@@ -19,18 +19,23 @@ function Grid({ items }) {
                 alt="project"
               />
             </a>
-            {project.sourceLink ? (
-              <a href={project.sourceLink} className={styles["source-link"]}>
-                View Source Code
-              </a>
-            ) : (
-              ""
-            )}
+            <SourceLink sourceLink={project.sourceLink} />
           </li>
         );
       })}
     </ul>
   );
+
+  function SourceLink({ sourceLink }) {
+    if (sourceLink) {
+      return (
+        <a href={sourceLink} className={styles["source-link"]}>
+          View Source Code
+        </a>
+      );
+    }
+    return null;
+  }
 }
 
 export default Grid;

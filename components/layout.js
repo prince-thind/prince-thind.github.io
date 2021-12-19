@@ -11,9 +11,7 @@ function Layout(props) {
 
   function Footer() {
     return (
-      <footer className="main-footer">
-        Copyright &copy; Prince Thind
-      </footer>
+      <footer className="main-footer">Copyright &copy; Prince Thind</footer>
     );
   }
 }

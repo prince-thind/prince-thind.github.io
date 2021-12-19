@@ -1,9 +1,10 @@
+import styles from "../styles/Header.module.scss";
+import brandLogo from "../images/brand-logo.png";
+
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import uniqid from "uniqid";
-import styles from "../styles/Header.module.scss";
-import brandLogo from "../images/brand-logo.png";
 
 export default function Header() {
   const router = useRouter();
@@ -32,10 +33,7 @@ export default function Header() {
           {pages.map((page) => {
             return (
               <li key={uniqid()}>
-                <CustomLink
-                  isActive={router.pathname === page.link ? true : false}
-                  page={page}
-                />
+                <CustomLink activeLink={router.pathname} page={page} />
               </li>
             );
           })}
@@ -45,7 +43,8 @@ export default function Header() {
   );
 }
 
-function CustomLink({ isActive, page }) {
+function CustomLink({ activeLink, page }) {
+  const isActive = activeLink == page.link ? true : false;
   return (
     <Link href={page.link}>
       <a
@@ -53,7 +52,7 @@ function CustomLink({ isActive, page }) {
           styles["nav-item"] + (isActive ? ` ${styles["active"]}` : "")
         }
       >
-        {page.name}{" "}
+        {page.name}
       </a>
     </Link>
   );

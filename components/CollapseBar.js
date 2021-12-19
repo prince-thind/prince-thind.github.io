@@ -1,9 +1,10 @@
 import styles from "../styles/Collapse-bar.module.scss";
+
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
-function CollapseBar({ type, children, topic }) {
+function CollapseBar({ type, topic, children }) {
   const [collpased, setCollapased] = useState(true);
 
   const collapsedIcon = <FontAwesomeIcon icon={faAngleDown} />;
@@ -14,11 +15,6 @@ function CollapseBar({ type, children, topic }) {
     customStyle += ` ${styles["child-collapse-bar"]}`;
   }
 
-  let collpasedChildren = null;
-  if (!collpased) {
-    collpasedChildren = <div> {children}</div>;
-  }
-
   return (
     <div className={styles["collapse-container"]}>
       <h2
@@ -27,12 +23,16 @@ function CollapseBar({ type, children, topic }) {
           setCollapased((collpased) => !collpased);
         }}
       >
-        {collpased ? expandIcon : collapsedIcon} {topic} 
-        {/* {collpased ? expandIcon : collapsedIcon} */}
+        {collpased ? expandIcon : collapsedIcon} {topic}
       </h2>
-      {collpasedChildren}
+      <ChildrenElements collpased={collpased} elements={children} />
     </div>
   );
+
+  function ChildrenElements({ collpased, elements }) {
+    if (collpased) return null;
+    return <div> {elements}</div>;
+  }
 }
 
 export default CollapseBar;
