@@ -93,7 +93,3 @@ async function getProjects() {
   const response=await (await fetch("api/repos-info")).json();
   return response;
 }
-
-async function sleep(n) {
-  return new Promise((res) => setTimeout(res, n * 1000));
-}

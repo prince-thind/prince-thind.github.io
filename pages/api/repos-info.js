@@ -5,14 +5,20 @@ const { default: projects, images } = require("../../lib/projects");
 
 export default async function handler(req, res) {
   const result = {};
+  let responsePromiseArray = [];
+
   for (const category in projects) {
-    const categoryProjects = projects[category];
     result[category] = [];
+    const categoryProjects = projects[category];
+
     for (const categoryProject of categoryProjects) {
-      const response = await fetchResponse(
-        process.env.GITHUB_REPO + categoryProject.id,
-        process.env.GITHUB_TOKEN
-      );
+      const responsePromise = getReponse(categoryProject.id);
+      responsePromiseArray.push(responsePromise);
+    }
+
+    const responses = await Promise.all(responsePromiseArray);
+
+    for (const response of responses) {
       const item = {
         name: response.name,
         imageLink: response.homepage,
@@ -21,8 +27,13 @@ export default async function handler(req, res) {
       };
       result[category].push(item);
     }
+    responsePromiseArray = [];
   }
   res.status(200).json(result);
+}
+
+async function getReponse(id) {
+  return fetchResponse(process.env.GITHUB_REPO + id, process.env.GITHUB_TOKEN);
 }
 
 async function fetchResponse(url, token) {
