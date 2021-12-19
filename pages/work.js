@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
 import CollapseBar from "../components/CollapseBar";
 import Grid from "../components/grid";
 import uniqid from "uniqid";
@@ -8,20 +7,13 @@ import styles from "../styles/Work.module.scss";
 import { faBriefcase, faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import projectsStatic from "../lib/projects";
+import  {default as fetchProjects} from "../lib/fetchProjects";
 import highlightProjects from "../lib/highlightProjects";
 
-export default function Work() {
+export default function Work({ projects }) {
   const skillsList = Object.keys(skills);
-
-  const [projects, setProjects] = useState({ "loading...": [] });
   const types = Object.keys(projects);
 
-  useEffect(() => {
-    (async () => {
-      setProjects(await getProjects());
-    })();
-  }, []);
 
   return (
     <div>
@@ -89,7 +81,10 @@ export default function Work() {
   );
 }
 
-async function getProjects() {
-  const response=await (await fetch("api/repos-info")).json();
-  return response;
-}
+export const getStaticProps = async () => {
+  const projects = JSON.parse(await fetchProjects());
+  return {
+    props: { projects },
+    revalidate: 60 * 60 * 24 * 7, // 7 days in seconds
+  };
+};
