@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
 import Resume from "../components/resume";
-import profilePic from "../images/profile-pic.jpg";
+import profilePic from "../images/main/profile-pic.jpg";
 import { faExternalLinkAlt, faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../styles/Home.module.scss";

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/About.module.scss";
-import profilePic from "../images/profile-pic.jpg";
+import profilePic from "../images/main/profile-pic.jpg";
 import socialLinks from "../lib/social-links";
 import uniqid from "uniqid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

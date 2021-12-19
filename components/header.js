@@ -1,5 +1,5 @@
 import styles from "../styles/Header.module.scss";
-import brandLogo from "../images/brand-logo.png";
+import brandLogo from "../images/main/brand-logo.png";
 
 import Link from "next/link";
 import Image from "next/image";
