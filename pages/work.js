@@ -7,13 +7,16 @@ import styles from "../styles/Work.module.scss";
 import { faBriefcase, faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import  {default as fetchProjects} from "../lib/fetchProjects";
-import highlightProjects from "../lib/highlightProjects";
+import { default as fetchProjects } from "../lib/fetchProjects";
 
 export default function Work({ projects }) {
   const skillsList = Object.keys(skills);
   const types = Object.keys(projects);
-
+  const highlightProjects = [];
+  for (const category in projects) {
+    const categoryProjects = projects[category];
+    highlightProjects.push(...categoryProjects.filter((e) => e.highlights));
+  }
 
   return (
     <div>
