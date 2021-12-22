@@ -36,8 +36,6 @@ export default function Education() {
         <div className={styles["highlights-main-content"]}>
           <div>
             <iframe
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/L-lpmGC2si8?start=12"
               title="YouTube video player"
               frameBorder="0"

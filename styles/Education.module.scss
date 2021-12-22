@@ -17,6 +17,19 @@
   svg {
     font-size: 10rem;
   }
+  @include mixins.small-screen {
+    flex-direction: column;
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+    }
+    svg {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
 }
 .highlights-heading {
   margin-top: 1rem;
@@ -27,9 +40,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:2rem;
+  gap: 2rem;
   margin: 2rem;
   font-size: 1.5rem;
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+  @include mixins.small-screen {
+    flex-direction: column;
+    iframe {
+      width: 300px;
+      height: 169px;
+    }
+  }
 }
 
 //old styles

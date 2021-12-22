@@ -11,12 +11,25 @@
     font-size: 1.5rem;
     color: var(--text-secondary);
   }
-  h2{
+  h2 {
     font-size: 2rem;
   }
-}
-.logo {
-  font-size: 10rem;
+  .logo {
+    font-size: 10rem;
+  }
+  @include mixins.small-screen {
+    flex-direction: column;
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+    }
+    .logo {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .highlights-heading {
