@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import CollapseBar from "../components/collapseBar";
 import styles from "../styles/Education.module.scss";
@@ -11,20 +12,21 @@ import class10ResultPic from "../images/achivements/class10Result.png";
 
 export default function Education() {
   return (
-    <div >
+    <div>
       <Head>
         <title>Education</title>
       </Head>
       <section className={styles["section"]}>
         <div>
-          <FontAwesomeIcon icon={faUniversity } />
+          <FontAwesomeIcon icon={faUniversity} />
         </div>
         <div>
           <h2>Education</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-            perferendis quaerat id alias. Delectus reprehenderit facilis aperiam
-            ullam distinctio! Et?
+            On this Page you can see my academic achivements and scores. This
+            page also lists my certifications that I have collected over the
+            years. Along all of this, I also present my class 12 and class 10
+            result as main highlights of this page.
           </p>
         </div>
       </section>
@@ -51,9 +53,7 @@ export default function Education() {
               height={350}
               width={400}
             />
-            <div>
-              Class 10th Result
-            </div>
+            <div>Class 10th Result</div>
           </div>
         </div>
       </section>
@@ -109,9 +109,13 @@ export default function Education() {
         <div>
           <h2>Interested in More?</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-            perferendis quaerat id alias. Delectus reprehenderit facilis aperiam
-            ullam distinctio! Et?
+            Though, now I mainly identify as a developer, I am stil open to
+            collaborations on the academic front. Feel free to reach out to me
+            via the contacts listed on my{" "}
+            <Link href="/about">
+              <a>about</a>
+            </Link>{" "}
+            page.
           </p>
         </div>
       </section>
