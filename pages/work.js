@@ -1,5 +1,6 @@
 import Head from "next/head";
 import CollapseBar from "../components/collapseBar";
+import Link from "next/link";
 import Grid from "../components/grid";
 import uniqid from "uniqid";
 import skills from "../lib/skills";
@@ -30,10 +31,10 @@ export default function Work({ projects }) {
         <div>
           <h2>Work</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            nemo libero magni neque quibusdam pariatur aspernatur mollitia earum
-            doloribus! Odit! Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit. Vitae, eaque?
+            Hello, This is my Work Page. Here, you will find live links to my
+            web projects and also their Source links on github. This page also
+            lists some on my skills that I have acquired over the course of my
+            dev journey.
           </p>
         </div>
       </section>
@@ -73,10 +74,14 @@ export default function Work({ projects }) {
         <div>
           <h2>Interested in More?</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            esse adipisci? Rerum facilis, maiores doloremque recusandae fugiat
-            porro omnis eveniet, aut minima sed, incidunt eos pariatur animi
-            ipsam laboriosam soluta.
+            You can always check out my{" "}
+            <a href="https://github.com/Prince-Thind">Github</a> to see all my
+            projects and work I have done over the years. If you wish to
+            collaborate with me or perhaps contact me consider visitng my{" "}
+            <Link href="/about">
+              <a>About</a>
+            </Link>{" "}
+            page.
           </p>
         </div>
       </section>
