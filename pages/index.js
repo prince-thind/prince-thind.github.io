@@ -41,7 +41,7 @@ export default function Home() {
                 Lovely Professional University, India,
               </a>{" "}
               and actively Looking for Internship opportunities. Visit the
-              follwing pages to know more about me.
+              following pages to know more about me.
             </p>
             <ul className={styles["details-list"]}>
               <li>
