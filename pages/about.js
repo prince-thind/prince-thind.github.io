@@ -34,16 +34,15 @@ export default function About() {
             50+ Projects on my github I identify as a competent web developer.
             Though Programming has been my interest since High School, I have
             been working in the field of web development only for over a year
-            now. Also, with my 8.5+ CGPA in B.tech CSE(Hons.), I must admit that
+            now. With my 8.5+ CGPA in B.tech CSE(Hons.), I must admit that
             maintaining an excellent Academic record along with a good developer
-            profile is not as easy as it seems. Besides, I also identify as an
-            outgoing introvert I do not like small talk but I absolutely enjoy
-            deep Conversation perhaps this explains why I am always looking for
-            someone to collaborate on github. Although I might seem very active
-            in tech world, I also absolutely Enjoy nature too. Gardening is one
-            of my prime hobbies. Finally, As a student in his 6th Semester I am
-            actively seeking internship opportunites and I look foward to
-            connecting to people with similar interests.
+            profile is not as easy as it seems. Although I might seem very
+            active in tech world, I identify as an outgoing introvert, I enjoy
+            deep talks I am always looking for someone to collaborate on github
+            and other tech fronts. Finally, As a student in his 6th Semester I
+            am actively seeking internship opportunites and I look foward to
+            connecting to people with similar interests. Please use the links
+            below to reach out to me if you wish to connect with me.
           </p>
         </div>
       </div>
