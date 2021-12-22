@@ -1,5 +1,5 @@
 import Head from "next/head";
-import CollapseBar from "../components/CollapseBar";
+import CollapseBar from "../components/collapseBar";
 import Grid from "../components/grid";
 import uniqid from "uniqid";
 import skills from "../lib/skills";

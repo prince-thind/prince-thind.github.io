@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import CollapseBar from "../components/CollapseBar";
+import CollapseBar from "../components/collapseBar";
 import styles from "../styles/Education.module.scss";
 import education from "../lib/education";
 import certification from "../lib/certification";
