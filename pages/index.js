@@ -18,7 +18,7 @@ export default function Home() {
           Hi, I am <span>Prince Thind</span>
         </h1>
         <h2>A Full Stack Web Developer</h2>
-        <hr  className="hr"/>
+        <hr className={`hr ${styles["hr"]}`} />
         <Resume />
       </section>
       <section className={styles["main-section"]}>
@@ -35,13 +35,13 @@ export default function Home() {
             <p>
               Hello, I am Prince Thind, a Full Stack web developer and
               Programmer working to create the best websites with modern
-              technologies like React and ExpressJS. Currently Pursuing B.Tech
-              CSE(Hons.) at LPU and looking for internship opportunities. Visit
-              my dedicated{" "}
-              <Link href="/about">
-                <a>about</a>
-              </Link>{" "}
-              page to know more about me.
+              technologies like React and ExpressJS. Currently, I am Pursuing B.Tech CSE(Hons.)
+              at{" "}
+              <a href="https://www.lpu.in/">
+                Lovely Professional University, India,
+              </a>{" "}
+              and actively Looking for Internship opportunities. Visit the
+              follwing pages to know more about me.
             </p>
             <ul className={styles["details-list"]}>
               <li>
