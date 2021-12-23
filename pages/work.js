@@ -9,6 +9,7 @@ import { faBriefcase, faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { default as fetchProjects } from "../lib/fetchProjects";
+import { images as projectImages } from "../lib/projects";
 
 export default function Work({ projects }) {
   const skillsList = Object.keys(skills);
@@ -18,6 +19,8 @@ export default function Work({ projects }) {
     const categoryProjects = projects[category];
     highlightProjects.push(...categoryProjects.filter((e) => e.highlights));
   }
+
+  addImages(projects);
 
   return (
     <div>
@@ -96,3 +99,11 @@ export const getStaticProps = async () => {
     revalidate: 60 * 60 * 24 * 7, // 7 days in seconds
   };
 };
+
+function addImages(projects) {
+  for (const category in projects) {
+    for (const item of projects[category]) {
+      item.image = projectImages[item.id];
+    }
+  }
+}
