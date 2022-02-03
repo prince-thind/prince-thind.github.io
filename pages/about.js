@@ -30,7 +30,7 @@ export default function About() {
           {" "}
           <h2>About</h2> <hr className="hr" />
           <p>
-            Hello, I am Prince Thind, a full stack developer and designer. With
+            Hello, I am Prince Thind, a Frontend developer and designer. With
             50+ Projects on my github I identify as a competent web developer.
             Though Programming has been my interest since High School, I have
             been working in the field of web development only for over a year

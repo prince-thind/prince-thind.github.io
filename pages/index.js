@@ -17,7 +17,7 @@ export default function Home() {
         <h1>
           Hi, I am <span>Prince Thind</span>
         </h1>
-        <h2>A Full Stack Web Developer</h2>
+        <h2>A Frontend Web Developer</h2>
         <hr className={`hr ${styles["hr"]}`} />
         <Resume />
       </section>
@@ -33,7 +33,7 @@ export default function Home() {
           <h3>About me</h3>
           <div className={styles["details"]}>
             <p>
-              Hello, I am Prince Thind, a Full Stack web developer and
+              Hello, I am Prince Thind, a Frontend web developer and
               Programmer working to create the best websites with modern
               technologies like React and ExpressJS. Currently, I am Pursuing B.Tech CSE(Hons.)
               at{" "}
