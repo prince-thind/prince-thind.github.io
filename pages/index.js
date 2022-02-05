@@ -33,7 +33,7 @@ export default function Home() {
           <h3>About me</h3>
           <div className={styles["details"]}>
             <p>
-              Hello, I am Prince Thind, a Frontend web developer and
+              Hello, I am Prince Thind, a junior web developer and
               Programmer working to create the best websites with modern
               technologies like React and ExpressJS. Currently, I am Pursuing B.Tech CSE(Hons.)
               at{" "}
