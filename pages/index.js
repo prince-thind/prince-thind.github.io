@@ -17,7 +17,7 @@ export default function Home() {
         <h1>
           Hi, I am <span>Prince Thind</span>
         </h1>
-        <h2>A Frontend Web Developer</h2>
+        <h2>A Junior Web Developer</h2>
         <hr className={`hr ${styles["hr"]}`} />
         <Resume />
       </section>
