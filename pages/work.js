@@ -4,23 +4,35 @@ import Link from "next/link";
 import Grid from "../components/grid";
 import uniqid from "uniqid";
 import skills from "../lib/skills";
+import projects from "../lib/projects";
+import {images} from "../lib/projects";
 import styles from "../styles/Work.module.scss";
 import { faBriefcase, faAddressCard } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { default as fetchProjects } from "../lib/fetchProjects";
-import { images as projectImages } from "../lib/projects";
 
-export default function Work({ projects }) {
+export default function Work() {
+
   const skillsList = Object.keys(skills);
   const types = Object.keys(projects);
+
+const sampleImage=images[Object.keys(images)[0]]
+
+  for(const category in projects){
+    const categoryProjects=projects[category];
+    for(const project of categoryProjects){
+      project.image=sampleImage;
+      
+    }
+  }
+
+
   const highlightProjects = [];
   for (const category in projects) {
     const categoryProjects = projects[category];
     highlightProjects.push(...categoryProjects.filter((e) => e.highlights));
   }
 
-  addImages(projects);
 
   return (
     <div>
@@ -92,18 +104,3 @@ export default function Work({ projects }) {
   );
 }
 
-export const getStaticProps = async () => {
-  const projects = JSON.parse(await fetchProjects());
-  return {
-    props: { projects },
-    revalidate: 60 * 60 * 24 * 7, // 7 days in seconds
-  };
-};
-
-function addImages(projects) {
-  for (const category in projects) {
-    for (const item of projects[category]) {
-      item.image = projectImages[item.id];
-    }
-  }
-}
