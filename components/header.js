@@ -23,9 +23,7 @@ export default function Header() {
               className="brand-logo"
             />
             <h2>
-              Prince
-              <br />
-              Thind
+             PRINCE THIND
             </h2>
           </a>
         </Link>
@@ -33,7 +31,15 @@ export default function Header() {
           {pages.map((page) => {
             return (
               <li key={uniqid()}>
-                <CustomLink activeLink={router.pathname} page={page} />
+                <Link href={page.link}>
+                  <a
+                    className={
+                      styles["nav-item"]
+                    }
+                  >
+                    {page.name}
+                  </a>
+                </Link>
               </li>
             );
           })}
@@ -43,37 +49,24 @@ export default function Header() {
   );
 }
 
-function CustomLink({ activeLink, page }) {
-  const isActive = activeLink == page.link ? true : false;
-  return (
-    <Link href={page.link}>
-      <a
-        className={
-          styles["nav-item"] + (isActive ? ` ${styles["active"]}` : "")
-        }
-      >
-        {page.name}
-      </a>
-    </Link>
-  );
-}
+
 
 function getPages() {
   return [
     {
-      name: "home",
+      name: "HOME",
       link: "/",
     },
     {
-      name: "work",
+      name: "WORK",
       link: "/work",
     },
     {
-      name: "education",
+      name: "EDUCATION",
       link: "/education",
     },
     {
-      name: "about",
+      name: "ABOUT",
       link: "/about",
     },
   ];

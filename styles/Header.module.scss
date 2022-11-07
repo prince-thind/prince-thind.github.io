@@ -1,8 +1,10 @@
 @use "mixins";
 
 .header {
-  position: sticky;
+  position: absolute;
   top: 0;
+  right:0;
+  left:0;
   z-index: 2;
 }
 .navbar {
@@ -43,13 +45,12 @@
 }
 .nav-item {
   display: block;
-  padding: 0.7em;
+  padding: 2rem;
+  font-size: 1rem;
+
   @include mixins.normalize-link($hover: hsl(0, 100%, 15%));
   @include mixins.small-screen() {
     padding: 1rem 0.5rem;
-  }
-  &::first-letter{
-    text-transform: capitalize;
   }
 }
 
