@@ -1,47 +1,72 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: hsl(0,0%,9%);
-    color:white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+  --dull-white: hsl(0, 0%, 85%);
+  background-color: hsl(0, 0%, 9%);
+  color: var(--dull-white);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.header{
-    background-color: hsl(0,0%,5%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:0 2rem;
+/*utiilty classes */
+.hover-underline::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background: red;
+  transform: scaleX(0);
+  transition: transform 200ms;
+  transform-origin: left;
 }
-.nav{
-    list-style-type: none;
-    display: flex;
+.hover-underline:hover.hover-underline::after {
+  transform: scaleX(1);
 }
-.nav-item{
-    cursor: pointer;
-    display: block;
-    padding: 1rem;
-    color:white;
-    text-decoration: none;
+.plain-link {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
-.nav-item:visited{
-    color:white;
+.plain-link:visited {
+  color: white;
 }
-.nav-item::after{
-    content: "";
-    display: block;
-    position: relative;
-    height: 2px;
-    width: 100%;
-    background: red;
-    transform: scaleX(0);
-    transition: transform 200ms;
-    transform-origin: left;
+
+/* element specfic classes */
+.header {
+  min-height: 100vh;
 }
-.nav-item:hover.nav-item::after{
-    transform: scaleX(1);
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-image {
+  margin-right: 0.5rem;
+  border: 2px groove gray;
+  border-radius: 50%;
+  height: 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: hsl(0, 0%, 5%);
+  font-size: 1.3rem;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+.nav-item-list {
+  list-style-type: none;
+  display: flex;
+}
+.nav-item-link {
+  display: block;
+  padding: 1rem;
 }
