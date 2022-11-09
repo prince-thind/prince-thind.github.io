@@ -1,0 +1,14 @@
+.intro-content {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  padding: 0 2rem;
+}
+.tag-line {
+  font-size: 3rem;
+}
+.profile-picture {
+  display: block;
+  max-width: 50vmin;
+  border-radius: 50%;
+  border: 0.5rem groove gray;
+}

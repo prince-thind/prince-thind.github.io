@@ -11,30 +11,6 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*utiilty classes */
-.hover-underline::after {
-  content: "";
-  display: block;
-  position: relative;
-  height: 2px;
-  width: 100%;
-  background: red;
-  transform: scaleX(0);
-  transition: transform 200ms;
-  transform-origin: left;
-}
-.hover-underline:hover.hover-underline::after {
-  transform: scaleX(1);
-}
-.plain-link {
-  cursor: pointer;
-  color: white;
-  text-decoration: none;
-}
-.plain-link:visited {
-  color: white;
-}
-
 /* element specfic classes */
 .header {
   min-height: 100vh;
@@ -62,7 +38,7 @@ body {
   background-color: hsl(0, 0%, 5%);
   font-size: 1.3rem;
   position: fixed;
-  top:0;
+  top: 0;
   right: 0;
   left: 0;
 }
@@ -73,19 +49,4 @@ body {
 .nav-item-link {
   display: block;
   padding: 1rem;
-}
-
-.intro-content{
-   display: grid;
-   grid-template-columns: 5fr 2fr;
-    padding:0 2rem;
-}
-.tag-line{
-    font-size: 3rem;
-}
-.profile-picture{
-    display: block;
-    max-width: 50vmin;
-    border-radius: 50%;
-    border:0.5rem groove gray;
 }
