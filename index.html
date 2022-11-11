@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <nav class="nav">
       <a class="logo-container plain-link" href="#home">
         <img src="src/assets/logo.png" class="logo-image" alt="logo">
@@ -17,17 +17,25 @@
       </a>
       <ul class="nav-item-list">
         <li><a class="nav-item-link hover-underline plain-link" href="#home">Home</a></li>
+        <li><a class="nav-item-link hover-underline plain-link" href="#work">Work</a></li>
         <li><a class="nav-item-link hover-underline plain-link" href="#contact">Contact</a></li>
         <li><a class="nav-item-link hover-underline plain-link" href="#about">About</a></li>
       </ul>
     </nav>
     <div class="intro-content">
-      <div class="tag-line">Hello, I am Prince Thind, a Web Developer.</div>
+      <div class="tag-line">
+        <div class="tag-line-container">
+          <div class="tag-line-hi">Hi,</div>
+          <div> I am <span class="tag-line-name">Prince Thind</span>,</div>
+          <div>a <span class="tag-line-web">Web Developer</span>.</div>
+
+        </div>
+      </div>
       <img class="profile-picture" src="src/assets/pfp.png" alt="profile">
     </div>
   </header>
   <main>
-main content
+    main content
   </main>
   <script type="module" src="src/main.js"></script>
 </body>

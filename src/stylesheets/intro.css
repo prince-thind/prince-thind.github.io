@@ -1,14 +1,45 @@
 .intro-content {
+  flex: 1; /* fills the header */
   display: grid;
-  grid-template-columns: 5fr 2fr;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
   padding: 0 2rem;
 }
 .tag-line {
-  font-size: 3rem;
+  font-size: 4rem;
+  flex: 1;
+  animation: intro 2s linear 0s 1 normal forwards;
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: 'Times New Roman', Times, serif; */
+
+  /* line-height: 6rem; */
+}
+
+.tag-line-hi {
+  font-size: 2em;
+}
+.tag-line-name {
+  color: hsl(240, 30%, 50%);
+}
+.tag-line-web {
+  color: hsl(120, 30%, 50%);
 }
 .profile-picture {
   display: block;
   max-width: 50vmin;
   border-radius: 50%;
-  border: 0.5rem groove gray;
+  margin: auto;
+  box-shadow:0 0 2rem 1rem hsl(0, 0%, 5%);
+  border: 0.1rem solid gray;
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
