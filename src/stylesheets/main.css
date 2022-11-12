@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   padding: 0;
@@ -10,7 +10,7 @@ body {
   --dull-white: hsl(0, 0%, 85%);
   background-color: hsl(0, 0%, 9%);
   color: var(--dull-white);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* element specfic classes */
@@ -43,6 +43,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 5;
 }
 .nav-item-list {
   list-style-type: none;
@@ -51,4 +52,50 @@ body {
 .nav-item-link {
   display: block;
   padding: 1rem;
+}
+
+.work-section {
+  background-color: hsl(0, 0%, 5%);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.work-section-intro {
+  text-align: justify;
+  background-color: hsl(0, 0%, 9%);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.work-main {
+  text-align: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 9%);
+}
+.work-main-header {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.work-main-header li {
+  flex-grow: 1;
+  padding: 0.5rem;
+  background-color: hsl(0, 0%, 1%);
+  cursor: pointer;
+}
+.project-heading.active,
+.skills-heading.active {
+  background-color: hsl(0, 0%, 9%);
+}
+
+.projects-tab,
+.skills-tab {
+  display: none;
+}
+
+.projects-tab.active,
+.skills-tab.active {
+  display: block;
 }
