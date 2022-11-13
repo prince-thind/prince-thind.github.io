@@ -21,3 +21,8 @@
 .plain-link:visited {
   color: white;
 }
+
+.mini-heading{
+   padding:0 1rem;
+   font-size: 2rem;
+}

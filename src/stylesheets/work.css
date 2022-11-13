@@ -1,67 +1,35 @@
 .work-section {
   background-color: hsl(0, 0%, 5%);
-  padding: 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.work-section-part-1{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
-.work-section-intro {
+.work-section-intro-para {
   text-align: justify;
-  background-color: hsl(0, 0%, 9%);
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 1rem;
+  font-size: 1.1rem;
+  color:hsl(0, 0%, 70%);
 }
-.work-main {
-  border-radius: 1rem;
-  overflow: hidden;
-  background-color: hsl(0, 0%, 9%);
-}
-.work-main-header {
-  text-align: center;
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-  background-color: hsl(0, 0%, 0%);
-  border-radius: 1rem;
-}
-.project-heading,
-.skills-heading {
-  flex-grow: 1;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
-.project-heading.active,
-.skills-heading.active {
-  background-color: hsl(0, 0%, 9%);
-}
-
-.work-tab {
-  display: none;
-  /* padding: 0 1rem; */
-  background-color: hsl(0, 0%, 9%);
-}
-
-.work-tab.active {
-  display: block;
-}
-
-.skills-tab.active {
+.skills-tab {
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
 }
+
 .skill {
-  background-color: hsl(0, 0%, 5%);
+  background-color: hsl(0, 0%, 9%);
   border-radius: 0.5rem;
   white-space: pre;
   padding:0.5rem 1rem;
   margin:0.5rem;
   cursor: pointer;
-  color:hsl(0, 0%, 50%)
+  color:hsl(0, 0%, 70%)
 }
 
 .project{
