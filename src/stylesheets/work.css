@@ -1,0 +1,54 @@
+.work-section {
+  background-color: hsl(0, 0%, 5%);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.work-section-intro {
+  text-align: justify;
+  background-color: hsl(0, 0%, 9%);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.work-main {
+  text-align: center;
+  border-radius: 1rem;
+  /* overflow: hidden; */
+  background-color: hsl(0, 0%, 9%);
+
+}
+.work-main-header {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  background-color: hsl(0, 0%, 0%);
+  border-radius: 1rem;
+
+}
+.work-main-header li {
+  flex-grow: 1;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.project-heading.active,
+.skills-heading.active {
+  background-color: hsl(0, 0%, 9%);
+}
+
+.work-tab {
+  display: none;
+  /* border:1px solid white; */
+  /* border-radius: 1rem; */
+  /* margin-top: 1rem; */
+  padding:1rem;
+  background-color: hsl(0, 0%, 9%);
+}
+
+.work-tab.active {
+  display: block;
+}
