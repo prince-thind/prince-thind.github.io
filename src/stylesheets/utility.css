@@ -22,12 +22,16 @@
   color: white;
 }
 
-.mini-heading{
-   padding:0 1rem;
-   font-size: 2rem;
+.mini-heading {
+  padding: 0 1rem;
+  font-size: 2rem;
 }
 
-.section{
+.section {
   padding: 1rem 2rem;
   /* text-align: center; */
+}
+
+.bold {
+  font-weight: 900;
 }
