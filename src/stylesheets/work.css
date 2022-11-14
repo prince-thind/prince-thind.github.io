@@ -1,7 +1,5 @@
 .work-section {
   background-color: hsl(0, 0%, 5%);
-  padding: 1rem 2rem;
-  text-align: center;
 }
 .work-section-part-1{
   display: grid;
