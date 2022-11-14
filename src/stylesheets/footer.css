@@ -1,0 +1,9 @@
+.footer {
+  padding: 5rem 2rem;
+  background-color: hsl(0, 0%, 5%);
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
