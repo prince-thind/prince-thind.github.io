@@ -45,3 +45,7 @@
   width: max-content;
   margin: auto;
 }
+
+.hidden{
+  display: none;
+}

@@ -1,0 +1,43 @@
+.contact-section{
+    background-color: hsl(0, 0%, 5%);
+}
+
+.contact-heading{
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact-form{
+    width: max-content;
+    margin:auto;
+    background-color:  hsl(0, 0%, 9%);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.label-text{
+    font-size: 1.2rem;
+}
+
+.input, .textarea{
+    min-width: 50vw;
+    padding: 1rem 1rem;
+    margin-bottom: 1.5rem ;
+    margin-top: 0.3rem ;
+    border-radius: 0.3rem;
+    background-color: hsl(0, 0%, 15%);
+    color:white;
+    border: none;
+}
+.textarea{
+    height: 10rem;
+}
+.submit-button{
+    display: block;
+    margin:auto;
+    padding: 0.5rem 2rem;
+    font-size: inherit;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(0, 0%, 15%);
+
+}
