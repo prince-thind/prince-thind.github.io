@@ -20,8 +20,12 @@ function createProjectLi(project) {
         <h4 class="project-heading">${project.name}</h4>
         <p>${project.description}</p>
          <div class="project-links">
-             <a href="${project.liveLink}" class="live-link link">Live Link</a>
-             <a href="${project.sourceLink}" class="source-link link">Source Link</a>
+             <a href="${project.liveLink}" class="live-link link-button">Live Link <span class="material-symbols-outlined">
+             open_in_new
+             </span> </a>
+             <a href="${project.sourceLink}" class="source-link link-button">Source Link <span class="material-symbols-outlined">
+             open_in_new
+             </span> </a>
           </div>
     </div>`
 

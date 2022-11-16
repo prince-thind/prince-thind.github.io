@@ -35,3 +35,17 @@
 .bold {
   font-weight: 900;
 }
+
+.link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white ;
+  color:black;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.link-button:visited{
+  color:initial;
+}
