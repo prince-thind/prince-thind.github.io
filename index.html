@@ -6,6 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="src/assets/misc/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prince Thind | Portfolio</title>
+  <script src="https://kit.fontawesome.com/23e33e7608.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -76,10 +77,9 @@
         <ul class="projects-tab work-tab" id="projects-tab">
           <!-- stuff added via JS -->
         </ul>
-        <a href="https://github.com/prince-thind?tab=repositories" class="plain-link link-button view-more-button" rel="noreferrer noopener" target="_blank">
-          View More <span class="material-symbols-outlined">
-            open_in_new
-          </span> </a>
+        <a href="https://github.com/prince-thind?tab=repositories" class="plain-link link-button view-more-button"
+          rel="noreferrer noopener" target="_blank">
+          View More <i class="fa-solid fa-arrow-up-right-from-square icon"></i> </a>
       </div>
     </section>
     <section id="about" class="about-section section">
@@ -109,41 +109,54 @@
       </p>
     </section>
     <section id="contact" class="contact-section">
-      <h3 class="mini-heading contact-heading">
-        Contact Me
-      </h3>
-      <form id="contact-form" class="contact-form">
-        <label class="form-label">
-          <div class="label-text">Name </div>
-          <input type="text" class="input" required name="name" placeholder="Your Name">
-        </label>
-        <label class="form-label">
-          <div class="label-text">Email </div>
-          <input type="text" class="input" required name="email" placeholder="Your Email">
-        </label>
-        <label class="form-label">
-          <div class="label-text">Message </div>
-          <textarea name="message" required class="textarea" placeholder="Your Message"></textarea>
-        </label>
-        <div class="button-container">
-          <button class="submit-button">Submit</button>
+      <div class="social-container">
+        <h3 class="mini-heading contact-heading">
+          Contact Me
+        </h3>
+        <div class="social-info">
+          <div class="location social-line"><i class="fa-solid fa-fw fa-location-dot social-icon icon"></i> Ludhiana,
+            Punjab,
+            India
+          </div>
+          <div class="education social-line">
+            <i class="fa-solid fa-fw fa-graduation-cap social-icon icon"></i> B.Tech CSE(Hons.), LPU, India
+          </div>
+
+          <div class="social-icons">
+            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer"> <i
+                class="fa-brands fa-github social-icon icon"></i></a>
+            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer"> <i
+                class="fa-solid fa-phone social-icon icon"></i></a>
+            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer"> <i
+                class="fa-solid fa-envelope social-icon icon"></i></a>
+            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer"> <i
+                class="fa-brands fa-linkedin social-icon icon"></i></a>
+            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer"> <i
+                class="fa-brands fa-telegram social-icon icon"></i></a>
+            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer"> <i
+                class="fa-brands fa-instagram social-icon icon"></i></a>
+            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer"> <i
+                class="fa-brands fa-discord social-icon icon"></i></a>
+          </div>
+          <button class="download-cv">Download CV</button>
+
         </div>
-      </form>
+      </div>
+      <div class="form-container">
+        <form id="contact-form" class="contact-form">
+          <input type="text" class="input" required name="name" placeholder="Your Name">
+          <input type="text" class="input" required name="email" placeholder="Your Email">
+          <textarea name="message" required class="textarea" placeholder="Your Message"></textarea>
+          <div class="button-container">
+            <button class="submit-button">Submit</button>
+          </div>
+        </form>
+      </div>
+
     </section>
   </main>
   <footer id="footer" class="footer">
-    <div class="footer-content">
-      <div class="copyright-info">
-        <div>Prince Thind</div>
-        <div class="copyright">Copyright &copy; 2023</div>
-      </div>
-      <div class="footer-socials">
-        <div>Socials</div>
-        <div class="social-icons">
-          social icons
-        </div>
-      </div>
-    </div>
+    <div class="copyright">Copyright &copy; 2023 Prince Thind</div>
   </footer>
   <script type="module" src="./src/main.js"></script>
 </body>
