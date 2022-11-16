@@ -15,11 +15,11 @@
 }
 .plain-link {
   cursor: pointer;
-  color: white;
+  color: unset;
   text-decoration: none;
 }
 .plain-link:visited {
-  color: white;
+  color: unset;
 }
 
 .mini-heading {
@@ -29,7 +29,6 @@
 
 .section {
   padding: 1rem 2rem;
-  /* text-align: center; */
 }
 
 .bold {
@@ -40,12 +39,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white ;
-  color:black;
   border-radius: 0.25rem;
   text-decoration: none;
   padding: 0.5rem;
-}
-.link-button:visited{
-  color:initial;
+  width: max-content;
+  margin: auto;
 }

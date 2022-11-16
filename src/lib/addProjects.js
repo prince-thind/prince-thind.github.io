@@ -18,12 +18,12 @@ function createProjectLi(project) {
     <img src="./src/assets/project-images/${project.imageSrc}" alt="sample-project" class="project-image">
     <div class="project-info">
         <h4 class="project-heading">${project.name}</h4>
-        <p>${project.description}</p>
+        <p class="project-description">${project.description}</p>
          <div class="project-links">
-             <a href="${project.liveLink}" class="live-link link-button">Live Link <span class="material-symbols-outlined">
+             <a href="${project.liveLink}" class="project-link plain-link link-button" rel="noreferrer noopener" target="_blank">Live Link <span class="material-symbols-outlined">
              open_in_new
              </span> </a>
-             <a href="${project.sourceLink}" class="source-link link-button">Source Link <span class="material-symbols-outlined">
+             <a href="${project.sourceLink}"  class="project-link plain-link link-button" rel="noreferrer noopener" target="_blank">Source Link <span class="material-symbols-outlined">
              open_in_new
              </span> </a>
           </div>
