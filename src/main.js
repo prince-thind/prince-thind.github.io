@@ -7,3 +7,8 @@ import './stylesheets/about.css'
 import './stylesheets/footer.css'
 import './stylesheets/contact-form.css'
 import './stylesheets/projects.css'
+
+import addProjects from './lib/addProjects.js';
+
+
+addProjects()
