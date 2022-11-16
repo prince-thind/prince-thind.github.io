@@ -29,37 +29,3 @@
   cursor: pointer;
   color:hsl(0, 0%, 70%)
 }
-
-.projects-heading{
-  padding-top: 10vh;
-  padding-bottom: 5vh;
-}
-
-.project{
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap:3rem;
-    padding:1rem;
-}
-.project-image{
-    max-width: 100%;
-    height: auto;
-    filter: brightness(70%);
-    border: 1rem ridge hsl(0, 0%, 20%);
-    /* box-shadow: 0 0 10px 2px gray; */
-}
-.project-info{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap:2rem;
-  text-align: left;
-  padding-bottom: 5rem;
-  /* grid-template-rows: 2fr 3fr 4fr;
-  place-items: center; */
-}
-.project-heading{
-  font-size: 1.5rem;
-
-}
