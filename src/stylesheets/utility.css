@@ -1,0 +1,55 @@
+/*utiilty classes */
+.hover-underline::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background: red;
+  transform: scaleX(0);
+  transition: transform 200ms;
+  transform-origin: left;
+}
+.hover-underline:hover.hover-underline::after {
+  transform: scaleX(1);
+}
+.plain-link {
+  cursor: pointer;
+  color: unset;
+  text-decoration: none;
+}
+.plain-link:visited {
+  color: unset;
+}
+
+.mini-heading {
+  padding: 0 1rem;
+  font-size: 2rem;
+}
+
+.section {
+  padding: 1rem 2rem;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  width: max-content;
+  margin: auto;
+}
+
+.hidden{
+  display: none;
+}
+.icon{
+  margin: 0.2rem;
+  font-size: 1.2rem;
+}

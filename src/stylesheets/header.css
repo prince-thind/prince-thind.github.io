@@ -1,0 +1,40 @@
+.header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-image {
+  margin-right: 0.5rem;
+  border: 2px groove gray;
+  border-radius: 50%;
+  height: 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: hsl(0, 0%, 5%);
+  font-size: 1.3rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  border-bottom: 1px solid hsl(0, 0%, 20%);
+}
+.nav-item-list {
+  list-style-type: none;
+  display: flex;
+}
+.nav-item-link {
+  display: block;
+  padding: 1rem;
+}

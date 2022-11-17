@@ -1,23 +1,15 @@
 {
-  "name": "prince-thind.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "portfolio",
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "build": "node-sass ./sass/main.scss -o css"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/prince-thind/prince-thind.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/prince-thind/prince-thind.github.io/issues"
-  },
-  "homepage": "https://github.com/prince-thind/prince-thind.github.io#readme",
-  "dependencies": {
-    "node-sass": "^7.0.1"
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "vite": "^2.9.15"
   }
 }

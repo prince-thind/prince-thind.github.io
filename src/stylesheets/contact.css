@@ -1,0 +1,90 @@
+.contact-section {
+  background-color: hsl(0, 0%, 5%);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+}
+
+.contact-heading {
+  /* text-align: center; */
+  padding: 1rem 0;
+  font-size: 3rem;
+}
+.social-info {
+  font-size: 1rem;
+}
+
+.social-line {
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.social-line-icon{
+  color:hsl(0, 75%, 50%);
+  font-size: 3rem;
+
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+  padding: 2rem 0;
+}
+.social-icon {
+  font-size: 2rem;
+  display: inline-block;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+}
+.download-cv {
+    display: block;
+    margin: auto;
+    padding: 0.5rem 2rem;
+    font-size: inherit;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(0, 0%, 15%);
+    border-color: hsl(0, 0%, 50%);
+    border-radius: 0.2rem;
+}
+.contact-form {
+  padding: 1.5rem;
+}
+
+.input,
+.textarea {
+  display: block;
+  min-width: 50vw;
+  padding: 1rem 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.3rem;
+  border-radius: 0.3rem;
+  background-color: hsl(0, 0%, 15%);
+  color: white;
+  border: none;
+}
+.textarea {
+  height: 10rem;
+}
+.submit-button-container{
+  display: flex;
+  align-items: center;
+  gap:3rem;
+}
+.success{
+  color:green;
+}
+.error{
+  color:red;
+}
+.submit-button {
+  display: block;
+  padding: 0.5rem 2rem;
+  font-size: inherit;
+  cursor: pointer;
+  color: white;
+  background-color: hsl(0, 0%, 15%);
+  border-color: hsl(0, 0%, 50%);
+  border-radius: 0.2rem;
+}
