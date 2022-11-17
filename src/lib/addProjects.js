@@ -13,7 +13,7 @@ function createProjectLi(project) {
     const li = document.createElement('li');
     li.classList.add('project');
     li.innerHTML = `
-    <img src="./src/assets/project-images/${project.imageSrc}" alt="sample-project" class="project-image">
+    <img src="${getImageUrl(project.imageSrc)}" alt="sample-project" class="project-image">
     <div class="project-info">
         <h4 class="project-heading">${project.name}</h4>
         <p class="project-description">${project.description}</p>
@@ -24,4 +24,8 @@ function createProjectLi(project) {
     </div>`
 
     return li;
+}
+
+function getImageUrl(name) {
+    return new URL(`../assets/project-images/${name}`, import.meta.url).href
 }
