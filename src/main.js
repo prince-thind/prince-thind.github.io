@@ -11,8 +11,10 @@ import './stylesheets/projects.css'
 import addProjects from './lib/addProjects.js';
 import addLinks from './lib/addLinks';
 import addCSSDesigns from './lib/cssDesigns.js'
+import LinkFormWithGoogleSheet from './lib/form-submit'
 
 
 addProjects()
 addLinks()
 addCSSDesigns()
+LinkFormWithGoogleSheet()

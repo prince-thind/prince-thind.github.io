@@ -67,9 +67,19 @@
 .textarea {
   height: 10rem;
 }
+.submit-button-container{
+  display: flex;
+  align-items: center;
+  gap:3rem;
+}
+.success{
+  color:green;
+}
+.error{
+  color:red;
+}
 .submit-button {
   display: block;
-  margin-right: auto;
   padding: 0.5rem 2rem;
   font-size: inherit;
   cursor: pointer;
