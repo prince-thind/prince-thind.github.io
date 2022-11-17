@@ -9,8 +9,10 @@ import './stylesheets/contact.css'
 import './stylesheets/projects.css'
 
 import addProjects from './lib/addProjects.js';
+import addLinks from './lib/addLinks';
 import addCSSDesigns from './lib/cssDesigns.js'
 
 
 addProjects()
+addLinks()
 addCSSDesigns()
