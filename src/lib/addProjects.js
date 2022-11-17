@@ -1,9 +1,7 @@
-import projects from './projects.json'
-
-
-
+import config from '../configs/config.js'
 
 export default function addProjects() {
+    const projects = config.projects;
     const projectsTab = document.querySelector('#projects-tab')
     for (const project of projects) {
         const projectLi = createProjectLi(project);
