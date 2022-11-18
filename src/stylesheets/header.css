@@ -38,3 +38,45 @@
   display: block;
   padding: 1rem;
 }
+.menu-button {
+  padding: 1rem;
+  background-color: yellow;
+  width: max-content;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .nav {
+    padding: 0;
+  }
+  .logo-image {
+    margin: 0.5rem;
+  }
+  .logo-text {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+    margin: 0.5rem 1rem;
+    margin-left: auto;
+  }
+  .nav-item-list {
+    flex-direction: column;
+    display: none;
+  }
+  .active.nav {
+    display: block;
+  }
+  .active .logo-container {
+    display: none;
+  }
+  .active .nav-item-list {
+    display: block;
+    font-size: 1rem;
+  }
+  .active .nav-item-link {
+    text-align: center;
+    border-bottom: 1px solid hsl(0, 0%, 25%);
+  }
+}

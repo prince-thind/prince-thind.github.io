@@ -18,6 +18,7 @@
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
+  gap:1rem
 }
 
 .skill {
@@ -25,7 +26,6 @@
   border-radius: 0.5rem;
   white-space: pre;
   padding:0.5rem 1rem;
-  margin:0.5rem;
   cursor: pointer;
-  color:hsl(0, 0%, 70%)
+  color:hsl(0, 0%, 70%);
 }

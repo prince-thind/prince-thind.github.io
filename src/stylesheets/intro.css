@@ -29,7 +29,7 @@
   max-width: 50vmin;
   border-radius: 50%;
   margin: auto;
-  box-shadow:0 0 2rem 1rem hsl(0, 0%, 5%);
+  box-shadow: 0 0 2rem 1rem hsl(0, 0%, 5%);
   border: 0.1rem solid gray;
 }
 
@@ -39,5 +39,22 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tag-line {
+    font-size: 1rem;
+    flex:0;
+  }
+  .profile-picture{
+    flex:0;
+    margin:0;
   }
 }
