@@ -40,7 +40,7 @@
 }
 .menu-button {
   padding: 1rem;
-  background-color: yellow;
+  /* background-color: yellow; */
   width: max-content;
   cursor: pointer;
   display: none;

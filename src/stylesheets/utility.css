@@ -46,10 +46,17 @@
   margin: auto;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
-.icon{
+.icon {
   margin: 0.2rem;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 760px) {
+  .mini-heading {
+    text-align: center;
+    padding: 1rem 0;
+  }
 }
