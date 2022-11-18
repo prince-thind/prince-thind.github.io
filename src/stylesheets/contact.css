@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-items: center;
+
 }
 
 .contact-heading {
@@ -22,6 +23,9 @@
 .social-line-icon {
   color: hsl(0, 75%, 50%);
   font-size: 3rem;
+}
+.education .social-line-icon {
+  color: hsl(240, 25%, 50%);
 }
 
 .social-icons {

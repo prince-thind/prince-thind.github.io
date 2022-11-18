@@ -1,12 +1,14 @@
 .projects-heading {
   text-align: center;
+  font-size: 3rem;
+  padding-bottom: 2rem;
 }
 
 .projects-tab {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 3rem;
-  padding: 2rem 6rem;
+  padding: 0rem 2rem;
 }
 
 .project {
@@ -38,7 +40,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  /* justify-content: center; */
   align-items: center;
   text-align: center;
   background: linear-gradient(hsla(0, 70%, 50%, 10%), hsla(0, 80%, 50%, 100%));
@@ -48,7 +49,7 @@
   transform-origin: bottom;
 }
 .project-heading {
-  font-size: 1.3rem;
+  font-size: 2rem;
   padding-bottom: 0.5rem;
 }
 .project-image:hover + .project-info,
@@ -88,7 +89,6 @@
     padding: 0;
   }
   .project-info {
-    /* text-align: left; */
     background: linear-gradient(
       hsla(0, 70%, 50%, 30%),
       hsla(0, 80%, 50%, 100%)

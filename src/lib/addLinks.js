@@ -12,7 +12,7 @@ function addLink(contact, link) {
     for (const contactAnchor of contactAnchors) {
         switch (contact) {
             case 'phone': contactAnchor.setAttribute('href', "tel:" + link); break
-            case 'email': contactAnchor.setAttribute('href', "emailto: " + link); break;
+            case 'email': contactAnchor.setAttribute('href', "mailto: " + link); break;
             default: contactAnchor.setAttribute('href', link)
         }
     }
