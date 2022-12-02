@@ -16,10 +16,11 @@
   position: relative;
   border-radius: 0.5rem;
   overflow: hidden;
-  margin: auto;
+  display: flex;
   box-shadow: hsla(206, 6%, 75%, 0.3) 0px 1px 2px 0px,
     hsla(206, 6%, 75%, 0.15) 0px 1px 3px 1px;
   transition: transform 100ms;
+  
 }
 .project:hover {
   transform: scale(1.02);
