@@ -1,4 +1,4 @@
-import links from '../configs/links.json'
+import links from '../data/links.json'
 
 export default function addLinks() {
     for (const [contact, link] of Object.entries(links)) {

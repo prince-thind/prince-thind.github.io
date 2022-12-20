@@ -1,4 +1,4 @@
-import projects from '../configs/projects.json'
+import projects from '../data/projects.json'
 
 export default function addProjects() {
     const projectsTab = document.querySelector('#projects-tab')
