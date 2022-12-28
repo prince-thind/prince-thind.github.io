@@ -12,9 +12,12 @@ import addProjects from './lib/addProjects.js';
 import addLinks from './lib/addLinks';
 import addCSSDesigns from './lib/cssDesigns.js'
 import LinkFormWithGoogleSheet from './lib/form-submit'
+import startImageAnimation from './lib/startImageAnimation'
+
 
 
 addProjects()
 addLinks()
 addCSSDesigns()
 LinkFormWithGoogleSheet()
+startImageAnimation()
