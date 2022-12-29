@@ -1,23 +1,38 @@
-import pfp1 from "../assets/misc/pfp.jpg"
-import pfp2 from "../assets/misc/pfp2.jpg"
+import pfp1 from "../assets/profile-pictures/pfp1.jpg"
+import pfp2 from "../assets/profile-pictures/pfp2.jpg"
+import pfp3 from "../assets/profile-pictures/pfp3.jpg"
+import pfp4 from "../assets/profile-pictures/pfp4.jpg"
+import pfp5 from "../assets/profile-pictures/pfp5.jpg"
 
 export default async function startImageAnimation() {
-    const imageElement = document.querySelector('#profile-picture');
-    const images = [pfp1, pfp2];
+    const imagesContainer = document.querySelector('#profile-picture-container');
+    const images = [pfp1, pfp2, pfp3, pfp4, pfp5];
+    const imageElements = [];
+
+    for (const image of images) {
+        const imageElement = document.createElement('img');
+        imageElement.classList.add('profile-picture');
+        imageElement.setAttribute('alt', 'profile');
+        imageElement.setAttribute('src', image);
+        imagesContainer.appendChild(imageElement)
+        imageElements.push(imageElement)
+    }
+
+
 
     let i = 0;
-    while ( i <= images.length) {
-        const newSrc=images[i]
-        imageElement.src=newSrc;
+    while (i <= images.length) {
 
-        await sleep(2);
+        imageElements[i].classList.toggle('current-picture');
+
+        await sleep(3);
+
+        imageElements[i].classList.toggle('current-picture')
+
 
         i++;
         if (i >= images.length) i = 0; //restart looping
     }
-
-    imageElement.src = images[1];
-
 }
 
 function sleep(n) {

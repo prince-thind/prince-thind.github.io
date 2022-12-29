@@ -23,14 +23,6 @@
 .tag-line-web {
   color: hsl(120, 30%, 50%);
 }
-.profile-picture {
-  display: block;
-  max-width: 50vmin;
-  border-radius: 10%;
-  margin: auto;
-  box-shadow: 0 0 2rem 1rem hsl(0, 0%, 5%);
-  border: 0.1rem solid gray;
-}
 
 @keyframes intro {
   from {
@@ -48,12 +40,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap:5vh;
+    gap: 5vh;
   }
   .tag-line {
     font-size: 2rem;
-  }
-  .profile-picture{
-    margin:0;
   }
 }

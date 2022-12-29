@@ -1,0 +1,46 @@
+.profile-picture-container {
+  position: relative;
+}
+.profile-picture {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.current-picture{
+  opacity: 1;
+}
+.static-picture {
+  box-shadow: 0 0 2rem 1rem hsl(0, 0%, 5%);
+  border: 0.1rem solid gray;
+  visibility: hidden;
+}
+.profile-picture,
+.static-picture {
+  display: block;
+  max-width: 50vmin;
+  border-radius: 10%;
+  margin: auto;
+}
+
+.fade {
+  animation: fading 1s infinite;
+}
+
+@keyframes fading {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .profile-picture {
+    margin: 0;
+  }
+}
