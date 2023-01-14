@@ -1,196 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src/assets/misc/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prince Thind | Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/23e33e7608.js"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="src/assets/misc/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prince Thind | Portfolio</title>
-  <script src="https://kit.fontawesome.com/23e33e7608.js" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NV6ZFVQFD1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "G-NV6ZFVQFD1");
+    </script>
+  </head>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NV6ZFVQFD1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-NV6ZFVQFD1');
-  </script>
-
-</head>
-
-<body>
-  <header class="header" id="home">
-    <nav class="nav" id="nav">
-      <div class="nav-top-bar">
-        <a class="logo-container plain-link" href="#home">
-          <img src="src/assets/misc/logo.png" class="logo-image" alt="logo">
-          <div class="logo-text">Prince Thind</div>
-        </a>
-        <div class="menu-button" id="menu-button">
-          <i class="fa-solid fa-fw fa-bars"></i>
+  <body>
+    <header class="header" id="home">
+      <nav class="nav" id="nav">
+        <div class="nav-top-bar">
+          <a class="logo-container plain-link" href="#home">
+            <img src="src/assets/misc/logo.png" class="logo-image" alt="logo" />
+            <div class="logo-text">Prince Thind</div>
+          </a>
+          <div class="menu-button" id="menu-button">
+            <i class="fa-solid fa-fw fa-bars"></i>
+          </div>
         </div>
-      </div>
-      <div class="nav-list-container nav-bottom-bar">
-        <ul class="nav-item-list" id="nav-item-list">
-          <li><a class="nav-item-link hover-underline plain-link" href="#home">Home</a></li>
-          <li><a class="nav-item-link hover-underline plain-link" href="#work">Work</a></li>
-          <li><a class="nav-item-link hover-underline plain-link" href="#about">About</a></li>
-          <li><a class="nav-item-link hover-underline plain-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="intro-content">
-      <div class="tag-line">
-        <div class="tag-line-container">
-          <div class="tag-line-hi">Hi,</div>
-          <div> I am <span class="tag-line-name">Prince Thind</span>,</div>
-          <div>a <span class="tag-line-web">Web Developer</span>.</div>
-        </div>
-      </div>
-      <div id="profile-picture-container" class="profile-picture-container">
-        <img class="static-picture" src="src/assets/profile-pictures/pfp1.jpg" alt="profile">
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="work-section section" id="work">
-      <div class="work-section-part-1">
-        <div class="work-section-intro">
-          <h3 class="mini-heading">A Little Intro</h3>
-          <p class="work-section-intro-para">
-            Hello, I am <span class="bold">Prince Thind</span>, a Web Developer who is skilled in <span
-              class="bold">Full Stack Development</span> with special
-            focus on <span class="bold">Front End</span>. Over the years, I have worked on several dozen projects and
-            have
-            developed professional skills that I am now so proud of.
-          </p>
-          <p class="work-section-intro-para">
-            I have a genuine passion for the <span class="bold">Javascript</span> language and like to identify as
-            someone who lives and breathes
-            in javascript. <span class="bold">Git</span> is the tool I use most often in
-            development and <span class="bold">Linux</span> has been my preferred OS for over 4 years now.
-          </p>
-        </div>
-        <div class="work-section-skills">
-          <h3 class="mini-heading">My Skills</h3>
-          <ul class="skills-tab work-tab" id="skills-tab">
-            <li class="skill work-tab-item">Git</li>
-            <li class="skill work-tab-item">Googling</li>
-            <li class="skill work-tab-item">HTML</li>
-            <li class="skill work-tab-item">CSS</li>
-            <li class="skill work-tab-item">Javascript</li>
-            <li class="skill work-tab-item">React</li>
-            <li class="skill work-tab-item">Redux</li>
-            <li class="skill work-tab-item">NodeJS</li>
-            <li class="skill work-tab-item">NPM</li>
-            <li class="skill work-tab-item">Express JS</li>
-            <li class="skill work-tab-item">MongoDB</li>
-            <li class="skill work-tab-item">Vite/Webpack</li>
-            <li class="skill work-tab-item">Linux</li>
+        <div class="nav-list-container nav-bottom-bar">
+          <ul class="nav-item-list" id="nav-item-list">
+            <li>
+              <a class="nav-item-link hover-underline plain-link" href="#home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="nav-item-link hover-underline plain-link" href="#work"
+                >Work</a
+              >
+            </li>
+            <li>
+              <a class="nav-item-link hover-underline plain-link" href="#about"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-item-link hover-underline plain-link"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
-      </div>
-
-      <div class="work-section-part-2 work-section-projects">
-        <h3 class="mini-heading projects-heading">Projects</h3>
-        <ul class="projects-tab work-tab" id="projects-tab">
-          <!-- stuff added via JS -->
-        </ul>
-        <a href="https://github.com/prince-thind?tab=repositories" class="plain-link link-button view-more-button"
-          rel="noreferrer noopener" target="_blank">
-          View More <i class="fa-solid fa-arrow-up-right-from-square icon"></i> </a>
-      </div>
-    </section>
-    <section id="about" class="about-section section">
-      <h3 class="mini-heading about-heading">About Me</h3>
-      <p class="about-para">
-        Hi, My name is Prince Thind. I am a web developer who has been developing professional skills for the
-        last couple years. I have a strong passion for programming. I have worked with several tech stacks but vanilla
-        javascript stays my favourite. I am also pretty comfortable with React+Redux setup for moderate to large scale
-        applications. On the backend, I like to work with ExpressJS and mongoose for data management.
-      </p>
-      <p class="about-para">
-        I like to identify as an outgoing Introvert. I do best when given enough liberty and time. I am a big fan of
-        open source ecosystem and have been using linux for the last 4 years now. Other of my core attributes include
-        strong attachment to English as a language. I am naturally drawn towards writing and other aspects of the
-        English language. If you are interested to know more about me checkout my <a
-          href="https://prince-thind.github.io/about" target="_blank" noopener noreferrer>about</a>
-        page for more. </p>
-      <p class="about-para">
-        If you are a recruiter reading this, Please note that I prefer only remote jobs.
-      </p>
-    </section>
-    <section id="contact" class="contact-section">
-      <div class="social-container">
-        <h3 class="mini-heading contact-heading">
-          Contact Me
-        </h3>
-        <div class="social-info">
-          <div class="location social-line"><i class="fa-solid fa-fw fa-location-dot social-line-icon icon"></i>
-            Ludhiana,
-            Punjab,
-            India
+      </nav>
+      <div class="intro-content">
+        <div class="tag-line">
+          <div class="tag-line-container">
+            <div class="tag-line-hi">Hi,</div>
+            <div>I am <span class="tag-line-name">Prince Thind</span>,</div>
+            <div>a <span class="tag-line-web">Web Developer</span>.</div>
           </div>
-          <div class="education social-line">
-            <i class="fa-solid fa-fw fa-graduation-cap social-line-icon icon"></i> B.Tech CSE(Hons.), LPU, India
-          </div>
-
-          <div class="social-icons">
-            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="github"> <i
-                class="fa-brands fa-github social-icon icon"></i></a>
-            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="phone"> <i
-                class="fa-solid fa-phone social-icon icon"></i></a>
-            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="email"> <i
-                class="fa-solid fa-envelope social-icon icon"></i></a>
-            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="linkedin"> <i
-                class="fa-brands fa-linkedin social-icon icon"></i></a>
-            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="stack-overflow"> <i
-                class="fa-brands fa-stack-overflow social-icon icon"></i></a>
-            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="npm"> <i
-                class="fa-brands fa-npm social-icon icon"></i></a>
-            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="instagram"> <i
-                class="fa-brands fa-instagram social-icon icon"></i></a>
-            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="discord"> <i
-                class="fa-brands fa-discord social-icon icon"></i></a>
-            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="telegram"> <i
-                class="fa-brands fa-telegram social-icon icon"></i></a>
-            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="twitter"> <i
-                class="fa-brands fa-twitter social-icon icon"></i></a>
-
-            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="facebook"> <i
-                class="fa-brands fa-facebook social-icon icon"></i></a>
-            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="snapchat"> <i
-                class="fa-brands fa-snapchat social-icon icon"></i></a>
-            <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="lpu-alumni"> <i
-                class="fa-brands fa-lpu social-icon icon"></i></a>
-
-          </div>
-          <a href="#" class="plain-link" target="_blank" rel="noopener noreferrer" data-link="cv">
-            <button class="download-cv">Download CV</button>
-          </a>
+        </div>
+        <div id="profile-picture-container" class="profile-picture-container">
+          <img
+            class="static-picture"
+            src="src/assets/profile-pictures/pfp1.jpg"
+            alt="profile"
+          />
         </div>
       </div>
-      <div class="form-container">
-        <form id="contact-form" class="contact-form">
-          <input type="text" class="input" required name="name" placeholder="Your Name">
-          <input type="text" class="input" required name="email" placeholder="Your Email">
-          <textarea name="message" required class="textarea" placeholder="Your Message"></textarea>
-          <div class="submit-button-container">
-            <button class="submit-button">Submit</button>
-            <div class="form-result" id="form-result"></div>
+    </header>
+    <main>
+      <section class="work-section section" id="work">
+        <div class="work-section-part-1">
+          <div class="work-section-intro">
+            <h3 class="mini-heading">A Little Intro</h3>
+            <p class="work-section-intro-para">
+              Hello, I am Prince Thind, a web developer skilled in many modern
+              technologies. I am pursing my
+              <span class="bold">B.tech CSE(Hons.)</span> from LPU and looking
+              for interesting work opportunities to commit myself to after my
+              graduation.
+            </p>
+            <p class="work-section-intro-para">
+              I have a genuine passion for the
+              <span class="bold">javascript</span> language and like to identify
+              as someone who lives and breathes in javascript. I am well
+              accustomed to <span class="bold">git</span> workflow and have been
+              working with it in development for over two years. I am also
+              pretty comfortable with <span class="bold">linux</span> cli since
+              it's my primary OS.
+            </p>
           </div>
-        </form>
-      </div>
+          <div class="work-section-skills">
+            <h3 class="mini-heading">My Skills</h3>
+            <ul class="skills-tab work-tab" id="skills-tab">
+              <li class="skill work-tab-item">Git</li>
+              <li class="skill work-tab-item">Googling</li>
+              <li class="skill work-tab-item">HTML</li>
+              <li class="skill work-tab-item">CSS</li>
+              <li class="skill work-tab-item">Javascript</li>
+              <li class="skill work-tab-item">React</li>
+              <li class="skill work-tab-item">Redux</li>
+              <li class="skill work-tab-item">NodeJS</li>
+              <li class="skill work-tab-item">NPM</li>
+              <li class="skill work-tab-item">Express JS</li>
+              <li class="skill work-tab-item">MongoDB</li>
+              <li class="skill work-tab-item">Vite/Webpack</li>
+              <li class="skill work-tab-item">Linux</li>
+            </ul>
+          </div>
+        </div>
 
-    </section>
-  </main>
-  <footer id="footer" class="footer">
-    <div class="copyright">Copyright &copy; 2023 Prince Thind</div>
-  </footer>
-  <script type="module" src="./src/main.js"></script>
-</body>
+        <div class="work-section-part-2 work-section-projects">
+          <h3 class="mini-heading projects-heading">Projects</h3>
+          <ul class="projects-tab work-tab" id="projects-tab">
+            <!-- stuff added via JS -->
+          </ul>
+          <a
+            href="https://github.com/prince-thind?tab=repositories"
+            class="plain-link link-button view-more-button"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            View More
+            <i class="fa-solid fa-arrow-up-right-from-square icon"></i>
+          </a>
+        </div>
+      </section>
+      <section id="about" class="about-section section">
+        <h3 class="mini-heading about-heading">About Me</h3>
+        <p class="about-para">
+          Hi, My name is Prince Thind. I am a web developer who has been
+          developing professional skills for the last couple years. I have a
+          strong passion for programming. I have worked with several tech stacks
+          but vanilla javascript stays my favourite. I am also pretty
+          comfortable with React+Redux setup for moderate to large scale
+          applications. On the backend, I like to work with ExpressJS and
+          mongoose for data management.
+        </p>
+        <p class="about-para">
+          I like to identify as an outgoing Introvert. I do best when given
+          enough liberty and time. I am a big fan of open source ecosystem and
+          have been using linux for the last 4 years now. Other of my core
+          attributes include strong attachment to English as a language. I am
+          naturally drawn towards writing and other aspects of the English
+          language. If you are interested to know more about me checkout my
+          <a
+            href="https://prince-thind.github.io/about"
+            target="_blank"
+            noopener
+            noreferrer
+            >about</a
+          >
+          page for more.
+        </p>
+        <p class="about-para">
+          If you are a recruiter reading this, Please note that I prefer only
+          remote jobs.
+        </p>
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="social-container">
+          <h3 class="mini-heading contact-heading">Contact Me</h3>
+          <div class="social-info">
+            <div class="location social-line">
+              <i
+                class="fa-solid fa-fw fa-location-dot social-line-icon icon"
+              ></i>
+              Ludhiana, Punjab, India
+            </div>
+            <div class="education social-line">
+              <i
+                class="fa-solid fa-fw fa-graduation-cap social-line-icon icon"
+              ></i>
+              B.Tech CSE(Hons.), LPU, India
+            </div>
 
+            <div class="social-icons">
+              <a
+                href="#"
+                class="plain-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-link="github"
+              >
+                <i class="fa-brands fa-github social-icon icon"></i
+              ></a>
+              <a
+                href="#"
+                class="plain-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-link="phone"
+              >
+                <i class="fa-solid fa-phone social-icon icon"></i
+              ></a>
+              <a
+                href="#"
+                class="plain-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-link="email"
+              >
+                <i class="fa-solid fa-envelope social-icon icon"></i
+              ></a>
+              <a
+                href="#"
+                class="plain-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-link="linkedin"
+              >
+                <i class="fa-brands fa-linkedin social-icon icon"></i
+              ></a>
+              <a
+                href="#"
+                class="plain-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-link="stack-overflow"
+              >
+                <i class="fa-brands fa-stack-overflow social-icon icon"></i
+              ></a>
+              <a
+                href="#"
+                class="plain-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-link="npm"
+              >
+                <i class="fa-brands fa-npm social-icon icon"></i
+              ></a>
+              <a
+                href="#"
+                class="plain-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-link="instagram"
+              >
+                <i class="fa-brands fa-instagram social-icon icon"></i
+              ></a>
+              <a
+                href="#"
+                class="plain-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-link="discord"
+              >
+                <i class="fa-brands fa-discord social-icon icon"></i
+              ></a>
+              <a
+                href="#"
+                class="plain-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-link="telegram"
+              >
+                <i class="fa-brands fa-telegram social-icon icon"></i
+              ></a>
+              <a
+                href="#"
+                class="plain-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-link="twitter"
+              >
+                <i class="fa-brands fa-twitter social-icon icon"></i
+              ></a>
+
+              <a
+                href="#"
+                class="plain-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-link="facebook"
+              >
+                <i class="fa-brands fa-facebook social-icon icon"></i
+              ></a>
+              <a
+                href="#"
+                class="plain-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-link="snapchat"
+              >
+                <i class="fa-brands fa-snapchat social-icon icon"></i
+              ></a>
+              <a
+                href="#"
+                class="plain-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-link="lpu-alumni"
+              >
+                <i class="fa-brands fa-lpu social-icon icon"></i
+              ></a>
+            </div>
+            <a
+              href="#"
+              class="plain-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-link="cv"
+            >
+              <button class="download-cv">Download CV</button>
+            </a>
+          </div>
+        </div>
+        <div class="form-container">
+          <form id="contact-form" class="contact-form">
+            <input
+              type="text"
+              class="input"
+              required
+              name="name"
+              placeholder="Your Name"
+            />
+            <input
+              type="text"
+              class="input"
+              required
+              name="email"
+              placeholder="Your Email"
+            />
+            <textarea
+              name="message"
+              required
+              class="textarea"
+              placeholder="Your Message"
+            ></textarea>
+            <div class="submit-button-container">
+              <button class="submit-button">Submit</button>
+              <div class="form-result" id="form-result"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="copyright">Copyright &copy; 2023 Prince Thind</div>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
