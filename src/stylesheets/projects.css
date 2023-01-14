@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
 .projects-heading {
   text-align: center;
   font-size: 3rem;
@@ -20,7 +22,6 @@
   box-shadow: hsla(206, 6%, 75%, 0.3) 0px 1px 2px 0px,
     hsla(206, 6%, 75%, 0.15) 0px 1px 3px 1px;
   transition: transform 100ms;
-  
 }
 .project:hover {
   transform: scale(1.02);
@@ -34,6 +35,8 @@
 
 .project-info {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 2px 2px 2px black;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -60,6 +63,7 @@
 }
 .project-description {
   padding: 0 1rem;
+  font-size: 1.5rem;
 }
 
 .project-links {
@@ -69,7 +73,8 @@
   align-items: center;
   padding: 1rem 0;
   font-size: 1rem;
-
+  text-shadow: none;
+  font-weight: bold;
 }
 .project-link {
   opacity: 0.8;
