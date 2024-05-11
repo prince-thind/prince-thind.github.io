@@ -1,9 +1,8 @@
 .contact-section {
-  background-color: hsl(0, 0%, 5%);
+  background-color: hsl(0, 0%, 7%);
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-items: center;
-
 }
 
 .contact-heading {
@@ -30,10 +29,10 @@
 
 .social-icons {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 0.5rem;
   padding: 2rem 0;
-  padding-bottom:0;
+  padding-bottom: 0;
 }
 .social-icon {
   font-size: 2rem;
@@ -45,7 +44,7 @@
 .download-cv {
   display: block;
   margin: auto;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
   padding: 0.5rem 2rem;
   font-size: inherit;
   cursor: pointer;

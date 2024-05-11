@@ -1,36 +1,35 @@
 [
-
   {
     "name": "Tic Tac Toe",
-    "description": "Classic Tic Tac Toe Game",
+    "description": "Jeu de Morpion classique",
     "liveLink": "https://prince-thind.github.io/tic-tac-toe/",
     "sourceLink": "https://github.com/prince-thind/tic-tac-toe",
     "imageSrc": "tic-tac-toe.png"
   },
   {
     "name": "Rock Paper Scissors",
-    "description": "Classic Rock Paper Scissors game",
+    "description": "Jeu classique de pierre-papier-ciseaux",
     "liveLink": "https://prince-thind.github.io/rock-paper-scissors/",
     "sourceLink": "https://github.com/prince-thind/rock-paper-scissors",
     "imageSrc": "rock-paper-scissors.png"
   },
   {
     "name": "Library",
-    "description": "Simple Personal Books management system",
+    "description": "Système de gestion de bibliothèque personnel simple",
     "liveLink": "https://prince-thind.github.io/library/",
     "sourceLink": "https://github.com/prince-thind/library",
     "imageSrc": "library.png"
   },
   {
     "name": "Catch The Trash",
-    "description": "A simple game made with Express JS",
+    "description": "Jeu simple créé avec Express JS",
     "liveLink": "https://catch-the-trash.onrender.com/",
     "sourceLink": "https://github.com/prince-thind/catch-the-trash",
     "imageSrc": "catch-the-trash.png"
   },
   {
     "name": "Todo App",
-    "description": "A basic todo App made with React",
+    "description": "Application Todo de base créée avec React",
     "liveLink": "https://prince-thind.github.io/todo-list/",
     "sourceLink": "https://github.com/prince-thind/todo-list",
     "imageSrc": "todo-list.png"
@@ -38,21 +37,21 @@
 
   {
     "name": "Shopping App",
-    "description": "Basic E-Commerce Mock App",
+    "description": "Application e-commerce basique fictive",
     "liveLink": "https://prince-thind.github.io/shopping-app/",
     "sourceLink": "https://github.com/prince-thind/shopping-app",
     "imageSrc": "shopping-app.png"
   },
   {
     "name": "Constellation Generator",
-    "description": "A Beautiful Constellation Generator",
+    "description": "Générateur de constellations magnifique",
     "liveLink": "https://prince-thind.github.io/constellation-generator/",
     "sourceLink": "https://github.com/prince-thind/constellation-generator",
     "imageSrc": "constellation-generator.png"
   },
   {
     "name": "Elevator",
-    "description": "Simulation of an Elevator in JS",
+    "description": "Simulation d'un ascenseur en JS",
     "liveLink": "https://prince-thind.github.io/elevator/",
     "sourceLink": "https://github.com/prince-thind/elevator",
     "imageSrc": "elevator.png"
