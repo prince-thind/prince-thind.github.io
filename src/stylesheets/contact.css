@@ -43,8 +43,7 @@
 }
 .download-cv {
   display: block;
-  margin: auto;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
   padding: 0.5rem 2rem;
   font-size: inherit;
   cursor: pointer;
