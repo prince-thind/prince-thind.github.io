@@ -21,10 +21,10 @@ function createProjectLi(project) {
          <div class="project-links">
              <a href="${
                project.liveLink
-             }" class="project-link plain-link link-button" rel="noreferrer noopener" target="_blank">Lien direct<i class="fa-solid icon fa-arrow-up-right-from-square"></i> </a>
+             }" class="project-link plain-link link-button" rel="noreferrer noopener" target="_blank">Live Link<i class="fa-solid icon fa-arrow-up-right-from-square"></i> </a>
              <a href="${
                project.sourceLink
-             }"  class="project-link plain-link link-button" rel="noreferrer noopener" target="_blank">Lien source<i class="fa-solid icon fa-arrow-up-right-from-square"></i> </a>
+             }"  class="project-link plain-link link-button" rel="noreferrer noopener" target="_blank">Source Link<i class="fa-solid icon fa-arrow-up-right-from-square"></i> </a>
           </div>
     </div>`;
 

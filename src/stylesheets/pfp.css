@@ -2,7 +2,7 @@
   position: relative;
 }
 .profile-picture {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   right: 0;
   top: 0;
@@ -10,7 +10,7 @@
   opacity: 0;
   transition: opacity 2s;
 }
-.current-picture{
+.current-picture {
   opacity: 1;
 }
 .static-picture {
@@ -41,6 +41,6 @@
 
 @media screen and (max-width: 760px) {
   .profile-picture {
-    margin: 0;
+    margin-top: 7rem;
   }
 }
