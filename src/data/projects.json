@@ -12,12 +12,5 @@
     "liveLink": "https://github.com/prince-thind/sales-visualization/",
     "sourceLink": "https://github.com/prince-thind/sales-visualization",
     "imageSrc": "2.png"
-  },
-  {
-    "name": "Library",
-    "description": "Simple Personal Books management system",
-    "liveLink": "https://prince-thind.github.io/library/",
-    "sourceLink": "https://github.com/prince-thind/library",
-    "imageSrc": "library.png"
   }
 ]
