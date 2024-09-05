@@ -1,17 +1,17 @@
 [
   {
-    "name": "Tic Tac Toe",
-    "description": "Classic Tic Tac Toe Game",
-    "liveLink": "https://prince-thind.github.io/tic-tac-toe/",
-    "sourceLink": "https://github.com/prince-thind/tic-tac-toe",
-    "imageSrc": "tic-tac-toe.png"
+    "name": "Customer Segmentation Analysis",
+    "description": "RFM Analysis of a Dataset with k4 Clustering",
+    "liveLink": "https://github.com/prince-thind/Customer-Segmentation-analysis",
+    "sourceLink": "https://github.com/prince-thind/Customer-Segmentation-analysis",
+    "imageSrc": "1.png"
   },
   {
-    "name": "Rock Paper Scissors",
-    "description": "Classic Rock Paper Scissors game",
-    "liveLink": "https://prince-thind.github.io/rock-paper-scissors/",
-    "sourceLink": "https://github.com/prince-thind/rock-paper-scissors",
-    "imageSrc": "rock-paper-scissors.png"
+    "name": "Sales Data visualization",
+    "description": "Visualization of monthly sales trends",
+    "liveLink": "https://github.com/prince-thind/sales-visualization/",
+    "sourceLink": "https://github.com/prince-thind/sales-visualization",
+    "imageSrc": "2.png"
   },
   {
     "name": "Library",
@@ -19,41 +19,5 @@
     "liveLink": "https://prince-thind.github.io/library/",
     "sourceLink": "https://github.com/prince-thind/library",
     "imageSrc": "library.png"
-  },
-  {
-    "name": "Catch The Trash",
-    "description": "A simple game made with Express JS",
-    "liveLink": "https://catch-the-trash.onrender.com/",
-    "sourceLink": "https://github.com/prince-thind/catch-the-trash",
-    "imageSrc": "catch-the-trash.png"
-  },
-  {
-    "name": "Todo App",
-    "description": "A basic todo App made with React",
-    "liveLink": "https://prince-thind.github.io/todo-list/",
-    "sourceLink": "https://github.com/prince-thind/todo-list",
-    "imageSrc": "todo-list.png"
-  },
-
-  {
-    "name": "Shopping App",
-    "description": "Basic E-Commerce Mock App",
-    "liveLink": "https://prince-thind.github.io/shopping-app/",
-    "sourceLink": "https://github.com/prince-thind/shopping-app",
-    "imageSrc": "shopping-app.png"
-  },
-  {
-    "name": "Constellation Generator",
-    "description": "A Beautiful Constellation Generator",
-    "liveLink": "https://prince-thind.github.io/constellation-generator/",
-    "sourceLink": "https://github.com/prince-thind/constellation-generator",
-    "imageSrc": "constellation-generator.png"
-  },
-  {
-    "name": "Elevator",
-    "description": "Simulation of an Elevator in JS",
-    "liveLink": "https://prince-thind.github.io/elevator/",
-    "sourceLink": "https://github.com/prince-thind/elevator",
-    "imageSrc": "elevator.png"
   }
 ]
