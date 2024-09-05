@@ -1,7 +1,7 @@
 [
   {
     "name": "Customer Segmentation Analysis",
-    "description": "RFM Analysis of a Dataset with k4 Clustering",
+    "description": "RFM Analysis of a Dataset with k means Clustering",
     "liveLink": "https://github.com/prince-thind/Customer-Segmentation-analysis",
     "sourceLink": "https://github.com/prince-thind/Customer-Segmentation-analysis",
     "imageSrc": "1.png"
