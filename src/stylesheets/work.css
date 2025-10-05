@@ -38,3 +38,232 @@
     text-align: justify;
   }
 }
+/* --- DARK THEME ADJUSTMENTS --- */
+
+/* Base Section Background */
+/* Note: The .work-section is already set to hsl(0, 0%, 5%) */
+
+/* --- General Layout and Spacing (Minimal changes) --- */
+
+.work-section-part-2 {
+    padding: 3rem 0;
+    /* Removed redundant flex/grid property as it's not the main layout container */
+}
+
+.projects-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff; /* White heading for dark theme */
+    font-weight: 700;
+}
+
+/* --- Professional Experience Detail Styling --- */
+
+.experience-detail {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    padding: 1.5rem;
+    border-left: 5px solid #00bcd4; /* Vibrant accent color (Teal/Cyan) */
+    background-color: hsl(0, 0%, 9%); /* Dark background for detail box */
+    border-radius: 5px;
+}
+
+.work-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #00bcd4; /* Match accent color */
+    
+}
+
+.work-description {
+    font-size: 1.1rem; /* Slightly increased size for dark readability */
+    line-height: 1.6;
+    color: hsl(0, 0%, 70%); /* Light grey text */
+}
+
+/* --- Key Projects Layout and Styling --- */
+
+.mini-heading {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2.5rem 0 1.5rem 0;
+    color: #ffffff; /* White heading */
+    font-weight: 600;
+}
+
+.projects-tab {
+    display: grid;
+    /* Keep grid for responsiveness: two columns, or stack */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.project {
+    /* Styles for the individual project box */
+    background-color: hsl(0, 0%, 12%); /* Slightly lighter dark background for cards */
+    border: 1px solid hsl(0, 0%, 20%); /* Subtle dark border */
+    border-radius: 8px;
+    padding: 25px;
+    line-height: 1.6;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Pronounced dark shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 1rem;
+    color: hsl(0, 0%, 85%); /* Light text */
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+}
+
+/* Style the bolded project titles inside the box */
+.project strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #00bcd4; /* Accent color for titles */
+    font-weight: 700;
+}
+
+/* --- View More Button Styling --- */
+
+.view-more-button {
+    display: block;
+    width: fit-content;
+    margin: 3rem auto 0 auto;
+    padding: 10px 20px;
+    /* background-color: #00bcd4;  */
+    color: hsl(0, 0%, 5%); 
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.view-more-button:hover {
+    /* background-color: #00a0b8; Slightly darker on hover */
+    transform: translateY(-2px) scale(1.1);
+}
+
+.view-more-button .icon {
+    margin-left: 8px;
+    font-size: 0.9rem;
+}
+
+/* --- Mobile Responsiveness --- */
+/* The projects-tab's 'grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));'
+   already handles stacking gracefully, but we'll keep the final media query clean. */
+@media (max-width: 768px) {
+    .projects-tab {
+        grid-template-columns: 1fr; /* Ensures stacking into a single column */
+        gap: 15px;
+        padding: 0 1rem; /* Add horizontal padding on small screens */
+    }
+    .experience-detail {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+
+/* --- Key Projects Styling Refinement --- */
+
+.project {
+  background-color: hsl(0, 0%, 12%); /* Dark card background */
+  border: 1px solid hsl(0, 0%, 20%); /* Subtle border */
+  border-radius: 8px;
+  padding: 25px; /* Ample padding inside the card */
+  line-height: 1.6;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: hsl(0, 0%, 85%); /* Light text for description */
+
+  /* Ensure flex settings from projects-tab parent */
+  flex: 1 1 calc(50% - 20px);
+  /* max-width: calc(50% - 20px); */
+  /* min-width: 300px; */
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.project .project-content-wrapper {
+  /* display: flex; */
+  gap: 1.5rem; /* Space between the title/icon column and description column */
+}
+
+.project .project-header {
+  flex: 0 0 120px; /* Fixed width for the icon and title column */
+  /* This ensures the title column doesn't grow and keeps the icon/title together */
+  display: flex; /* To center icon/title if needed, though default is top */
+  flex-direction: column; /* Stack icon and title vertically */
+  align-items: flex-start; /* Align icon/title to the left */
+  /* Optionally center: align-items: center; */
+}
+
+.project .project-icon-and-title {
+  display: flex;
+  flex-direction: column; /* Stack icon and title */
+  align-items: flex-start; /* Align icon and title to the left */
+}
+
+
+.project .project-icon {
+  font-size: 2.8rem; /* Larger icon size */
+  color: #00bcd4; /* Accent color for icon */
+  margin-bottom: 0.5rem; /* Space between icon and title */
+}
+
+.project .project-title {
+  font-size: 1.3rem; /* Larger title font size */
+  font-weight: 700;
+  color: #00bcd4; /* Accent color for title */
+  line-height: 1.3;
+  margin: 0; /* Remove default margin from h5 */
+}
+
+.project .project-description-area {
+  flex: 1; /* Description takes up remaining space */
+  font-size: 1.05rem;
+}
+
+.project .project-description-area p {
+  margin: 0; /* Remove default paragraph margin */
+  color: hsl(0, 0%, 85%); /* Ensure description text color is light */
+}
+
+/* Style for highlighted text within the description (e.g., "20% reduction") */
+.project .project-description-area .highlight {
+  color: #00bcd4; /* Accent color for highlighted text */
+  font-weight: 600;
+}
+
+/* Responsive adjustments for projects */
+@media (max-width: 768px) {
+  .project .project-content-wrapper {
+    flex-direction: column; /* Stack title/icon and description vertically */
+    gap: 1rem;
+  }
+  .project .project-header {
+    flex: none; /* Remove fixed width when stacking */
+    width: 100%; /* Take full width */
+    align-items: flex-start; /* Ensure title/icon are left-aligned */
+  }
+  .project .project-icon {
+    font-size: 2.5rem; /* Slightly smaller icon on mobile */
+  }
+  .project .project-title {
+    font-size: 1.2rem; /* Slightly smaller title on mobile */
+  }
+  .project {
+    padding: 20px;
+  }
+}
