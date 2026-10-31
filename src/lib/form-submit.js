@@ -1,65 +1,36 @@
-// const weburl = 'https://script.google.com/macros/s/AKfycbwE8pVi0ioOXZ7j_-t6G6P0rnlkLsemiMOOwYSKvpcyJik4MbYgyMKuDNHN2Kp0Sjo3ZQ/exec'
-const weburl =
-  "https://script.google.com/macros/s/AKfycbwYAXPWTn_EjnQrD-M27GRksLh3SkqKaw81ZDCaW4irxRS9ivQaJuR6wCrBdQc9zp6H/exec";
-
-let submiitedAlready = false;
-
 export default function LinkFormWithGoogleSheet() {
   const form = document.querySelector("#contact-form");
   form.addEventListener("submit", handleFormSubmit);
 }
 
-async function handleFormSubmit(e) {
+function handleFormSubmit(e) {
   e.preventDefault();
-  if (submiitedAlready) {
-    displayFormResult({
-      style: "error",
-      message: "You have already filled this form once!",
-    });
-    return;
+
+  const formData = new FormData(e.target);
+  const data = Object.fromEntries(formData);
+
+  // Replace with your email address
+  const recipient = "your-email@example.com";
+  const subject = encodeURIComponent(data.subject || "New Contact Form Submission");
+
+  // Formats all form fields into the email body
+  let bodyText = "";
+  for (const [key, value] of Object.entries(data)) {
+    bodyText += `${key}: ${value}\n`;
   }
-  submiitedAlready = true;
+  const body = encodeURIComponent(bodyText);
 
-  displayFormResult({ message: "Submitting Response...", style: null });
+  // Open default email client
+  window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
 
-  const data = Object.fromEntries(new FormData(e.target));
-  const success = await postData(data);
-
-  if (success) {
-    displayFormResult({
-      message: "Data Submitted Successfully!",
-      style: "success",
-    });
-  } else {
-    displayFormResult({
-      message: "Some Unknown Error Occured, please contact me via other means",
-      style: "error",
-    });
-  }
+  displayFormResult({
+    message: "Opening your email client...",
+    style: "success",
+  });
 }
 
 function displayFormResult(data) {
   const formResultDiv = document.querySelector("#form-result");
   formResultDiv.textContent = data.message;
-
-  if (data.style == "error") {
-    formResultDiv.classList.add("error");
-  } else if (data.style == "success") {
-    formResultDiv.classList.add("success");
-  }
-}
-
-async function postData(data) {
-  const rawRes = await fetch(weburl, {
-    method: "POST",
-    body: new URLSearchParams(data),
-  });
-
-  const res = await rawRes.json();
-
-  if (res.result == "success") {
-    return true;
-  }
-
-  return false;
+  formResultDiv.className = data.style || "";
 }
