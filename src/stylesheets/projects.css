@@ -1,119 +1,72 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+/* Section heading */
 .projects-heading {
   text-align: center;
-  font-size: 3rem;
-  padding-bottom: 2rem;
-}
-
-.projects-tab {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  padding: 0rem 2rem;
-}
-
-.project {
-  list-style-type: none;
-  position: relative;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  display: flex;
-  box-shadow: hsla(206, 6%, 75%, 0.3) 0px 1px 2px 0px,
-    hsla(206, 6%, 75%, 0.15) 0px 1px 3px 1px;
-  transition: transform 100ms;
-}
-.project:hover {
-  transform: scale(1.02);
-}
-.project-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  opacity: 0.8;
-}
-
-.project-info {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-family: "Open Sans", sans-serif;
-  text-shadow: 2px 2px 2px black;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(hsla(0, 70%, 50%, 10%), hsla(0, 80%, 50%, 100%));
-  transform: scaleY(0);
-  /* transform: scaleY(1); */
-  transition: transform 200ms;
-  transform-origin: bottom;
-}
-.project-heading {
-  font-size: 2rem;
-  padding-bottom: 0.5rem;
-}
-.project-image:hover + .project-info,
-.project-info:hover {
-  transform: scaleY(1);
-}
-.project-description {
-  padding: 0 1rem;
   font-size: 1.5rem;
+  padding-bottom: 1rem;
+  color: hsl(0, 0%, 90%);
 }
 
-.project-links {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 1rem 0;
+/* Skills section layout */
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Individual skill cards */
+.skill-category {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: hsl(0, 0%, 9%);
+  border: 1px solid hsl(0, 0%, 15%);
+  transition: transform 150ms ease, border-color 150ms ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-3px);
+  border-color: hsl(0, 0%, 30%);
+}
+
+/* Category titles */
+.skill-category .projects-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 0.75rem;
+  margin: 0;
+  color: hsl(0, 0%, 85%);
+}
+
+/* Skill descriptions */
+.skill-category p {
   font-size: 1rem;
-  text-shadow: none;
-  font-weight: bold;
-}
-.project-link {
-  opacity: 0.8;
-  background-color: white;
-  color: black;
-}
-.project-link:visited {
-  color: black;
+  line-height: 1.7;
+  margin: 0;
+  color: hsl(0, 0%, 70%);
 }
 
-.view-more-button {
-  padding: 2rem;
-}
-
+/* Mobile layout */
 @media screen and (max-width: 760px) {
-  .projects-tab {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .skills-section {
+    grid-template-columns: 1fr;
     gap: 1rem;
     padding: 0;
   }
-  .project-info {
-    background: linear-gradient(
-      hsla(0, 70%, 50%, 30%),
-      hsla(0, 80%, 50%, 100%)
-    );
+
+  .skill-category {
+    padding: 1.25rem;
   }
-  .project-heading {
-    padding: 0;
-    font-size: 1rem;
+
+  .skill-category .projects-heading {
+    font-size: 1.1rem;
   }
-  .project-links {
-    padding: 0.5rem;
-    flex-direction: column;
-    /* align-items: flex-start; */
-    gap: 0.5rem;
-  }
-  .project-link {
-    padding: 0 0.5rem;
-    margin: 0;
+
+  .skill-category p {
+    font-size: 0.95rem;
   }
 }
